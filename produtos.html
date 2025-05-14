@@ -1,15 +1,4 @@
 
-1 of 30
-(no subject)
-
-Janiele Nascimento Bastos <janiele.nascimento.2426@gmail.com>
-Attachments
-8:51 AM (3 hours ago)
-to goldenfoxjunior
-
-
- One attachment
-  •  Scanned by Gmail
 <!DOCTYPE HTML>
 
 <html>
@@ -93,36 +82,95 @@ to goldenfoxjunior
 }
 
 /* Estilo do botão "Comprar" */
-.botao {
-    display: inline-block;
-    text-align: center;
-    font-size: 1em;
-    padding: 10px 20px;
-    background-color: #ff6600;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    text-decoration: none;
-    font-weight: bold;
+.produto .botao {
+  font-size: 1em;
+  padding: 12px;
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
 }
 
-.botao:hover {
-    background-color: #e65c00;
+.produto .botao:hover {
+  background-color: #cc5200;
+  transform: scale(1.03);
 }
 
-    .h2produtos {
-      display: inline-block;      
-      background-color: black;     
-      color: white;              
-      border: 2px solid white;    
-      padding: 10px 20px;         
-      border-radius: 8px;         
-    }
-	.sectionprodutos{
-		
-      text-align: center;
-	}
+
+.h2produtos {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 40px auto 20px;
+  font-size: 1.8em;
+}
+
+.sectionprodutos {
+  padding: 40px 0;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .produto {
+    width: 100%;
+    height: auto;
+  }
+
+  .produtos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#carrinho-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 100%;
+  background: #fff;
+  border-left: 2px solid #ccc;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  z-index: 9999;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+#carrinho h3 {
+  margin-top: 0;
+  color: #ff6600;
+}
+
+#carrinho ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#carrinho ul li {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+#carrinho button {
+  background-color: #ff6600;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+#carrinho button:hover {
+  background-color: #e65c00;
+}
+
 
 
 </style>
@@ -239,35 +287,34 @@ to goldenfoxjunior
         <div class="produto">
             <img src="https://cobasi.vteximg.com.br/arquivos/ids/939252/racao-golden-special-para-caes-adultos-frango-e-carne-3310549-15kg-Frente.jpg?v=638757374687300000" alt="Golden Special Cães">
             <h3>Golden Special</h3>
-            <p>Ração sabor frango e arroz para cães adultos. Alta digestibilidade.</p>
 			 <p><strong>Preço:</strong> R$ 139,90</p>
     		<a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
             <img src="https://petshopamarosbichos.fbitsstatic.net/img/p/racao-premier-racas-especificas-spitz-alemao-para-caes-adultos-71853/259161-2.jpg?w=420&h=420&v=no-change&qs=ignore" alt="Premier Pet Raças Específicas">
             <h3>Premier Raças Específicas</h3>
-            <p>Formulação ideal para cada raça. Mais saúde e vitalidade.</p>
+           
 			 <p><strong>Preço:</strong> R$ 139,90</p>
     <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
             <img src="https://m.media-amazon.com/images/I/511x4A38H1L._AC_UF1000,1000_QL80_.jpg" alt="Royal Canin Cães">
             <h3>Royal Canin</h3>
-            <p>Rações específicas por porte, idade e necessidades especiais.</p>
+        
 			 <p><strong>Preço:</strong> R$ 139,90</p>
     <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
             <img src="https://m.media-amazon.com/images/I/519zCPugIvL.jpg" alt="Guabi Natural Cães">
             <h3>Guabi Natural</h3>
-            <p>Sem corantes ou transgênicos. Com ingredientes naturais.</p>
+          
 			 <p><strong>Preço:</strong> R$ 139,90</p>
     <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
             <img src="https://www.petlove.com.br/images/products/230249/product/Ra%C3%A7%C3%A3o_Seca_Nestl%C3%A9_Purina_Pro_Plan_Frango_C%C3%A3es_Adultos_Ra%C3%A7as_M%C3%A9dias_3105259_15.jpg?1627734333" alt="Pro Plan Cães">
             <h3>Pro Plan</h3>
-            <p>Rica em probióticos e proteínas de alta qualidade.</p>
+          
 			 <p><strong>Preço:</strong> R$ 139,90</p>
     <a href="#" class="botao">Comprar</a>
         </div>
@@ -280,35 +327,30 @@ to goldenfoxjunior
         <div class="produto">
             <img src="https://cobasi.vteximg.com.br/arquivos/ids/316962/Gato-Adulto-Castrado.jpg?v=638127719556300000" alt="Royal Canin Gatos">
             <h3>Royal Canin</h3>
-            <p>Fórmulas para gatos castrados, peludos ou com sensibilidades.</p>
 			 <p><strong>Preço:</strong> R$ 139,90</p>
     <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
             <img src="https://cobasi.vteximg.com.br/arquivos/ids/1043119/Racao-Premier-Gatos-Castrados-7-a-11-Anos-Ambientes-Internos-Frango-7.5kg-frente.png?v=638137343197230000" alt="Premier Gato Castrado">
             <h3>Premier Gato Castrado</h3>
-            <p>Ajuda no controle do peso e na saúde urinária.</p>
 			 <p><strong>Preço:</strong> R$ 139,90</p>
     <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
             <img src="https://cobasi.vteximg.com.br/arquivos/ids/818262/racao-golden-gatos-adultos-sabor-carne-1kg.jpg?v=638127777113830000" alt="Golden Gatos">
             <h3>Golden Gatos</h3>
-            <p>Ração saborosa e equilibrada para gatos adultos.</p>
 			 <p><strong>Preço:</strong> R$ 139,90</p>
     <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
             <img src="https://io.convertiez.com.br/m/agropetmineiro/shop/products/images/890/medium/racao-seca-gran-plus-gourmet-caes-adultos-mini-ovelha-e-arroz-1kg_1917.png" alt="GranPlus Gourmet Gatos">
             <h3>GranPlus Gourmet</h3>
-            <p>Com taurina, essencial para saúde dos olhos e coração dos felinos.</p>
 			 <p><strong>Preço:</strong> R$ 139,90</p>
     <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
             <img src="https://www.reidosanimais.com.br/media/catalog/product/cache/1/image/380x350/9df78eab33525d08d6e5fb8d27136e95/g/a/gato_adulto_frenre_pro_plan_2.png" alt="Pro Plan Gatos">
             <h3>Pro Plan</h3>
-            <p>Imunidade reforçada e nutrientes de alto desempenho.</p>
 			 <p><strong>Preço:</strong> R$ 139,90</p>
     <a href="#" class="botao">Comprar</a>
         </div>
@@ -321,28 +363,24 @@ to goldenfoxjunior
         <div class="produto">
             <img src="https://a-static.mlcdn.com.br/800x560/coleira-para-cachorro-ajustavel-rosa-unica-mix/unicamixcombr/cn108ros-m/2d5baf7fc173c87592c1a183d14feb93.jpeg" alt="Coleira para cães">
             <h3>Coleira Ajustável</h3>
-            <p>Conforto e segurança para o seu pet em todos os passeios.</p>
 			 <p><strong>Preço:</strong> R$ 139,90</p>
     <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
-            <img src="" alt="Brinquedo mordedor">
+            <img src="https://images.tcdn.com.br/img/img_prod/470728/brinquedo_mordedor_ratinho_real_com_apito_para_gatos_13125_2_8e8ed937c976d301b6ce11f30309e52d.jpg" alt="Brinquedo mordedor">
             <h3>Brinquedo Mordedor</h3>
-            <p>Ajuda a manter a saúde bucal e reduz o estresse do pet.</p>
 			 <p><strong>Preço:</strong> R$ 139,90</p>
     <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
-            <img src="" alt="Caminha pet">
+            <img src="https://cdn.leroymerlin.com.br/products/cama_pet_retangular_resistente_caminha_estofada_almofada_remo_1571640361_f78b_600x600.jpg" alt="Caminha pet">
             <h3>Caminha Estofada</h3>
-            <p>Super macia, ideal para o descanso dos pets pequenos e médios.</p>
 			 <p><strong>Preço:</strong> R$ 139,90</p>
     <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
-            <img src="" alt="Comedouro">
+            <img src="https://plasvale.cdn.magazord.com.br/img/2023/07/produto/94/comedouro-duplo-removivel-199-variacao-37-1-20201130131844.jpeg?ims=fit-in/600x600/filters:fill(white)" alt="Comedouro">
             <h3>Comedouro Duplo</h3>
-            <p>Prático e higiênico, ideal para ração e água no mesmo suporte.</p>
 			 <p><strong>Preço:</strong> R$ 139,90</p>
     <a href="#" class="botao">Comprar</a>
         </div>
@@ -444,6 +482,60 @@ to goldenfoxjunior
 			</div>
 		</div>
 	</section>
+	<script>
+  const carrinho = [];
+  const listaCarrinho = document.getElementById("lista-carrinho");
+  const totalCarrinho = document.getElementById("total-carrinho");
+
+  function adicionarAoCarrinho(nome, preco) {
+    carrinho.push({ nome, preco });
+    atualizarCarrinho();
+    abrirCarrinho();
+  }
+
+  function atualizarCarrinho() {
+    listaCarrinho.innerHTML = "";
+    let total = 0;
+    carrinho.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`;
+      listaCarrinho.appendChild(li);
+      total += item.preco;
+    });
+    totalCarrinho.textContent = `Total: R$ ${total.toFixed(2)}`;
+  }
+
+  function abrirCarrinho() {
+    document.getElementById("carrinho-container").style.display = "block";
+  }
+
+  function fecharCarrinho() {
+    document.getElementById("carrinho-container").style.display = "none";
+  }
+
+  // Intercepta todos os botões "Comprar"
+  document.querySelectorAll(".botao").forEach(botao => {
+    botao.addEventListener("click", e => {
+      e.preventDefault();
+      const produto = botao.closest(".produto");
+      const nome = produto.querySelector("h3").textContent;
+      const precoTexto = produto.querySelector("p strong")?.parentNode?.textContent || "R$ 0,00";
+      const preco = parseFloat(precoTexto.replace("Preço:", "").replace("R$", "").replace(",", ".").trim());
+      adicionarAoCarrinho(nome, preco);
+    });
+  });
+</script>
+<section></section>
+	<!-- Carrinho de Compras -->
+<div id="carrinho-container" style="display: none;">
+  <div id="carrinho">
+    <h3>🛒 Carrinho de Compras</h3>
+    <ul id="lista-carrinho"></ul>
+    <p id="total-carrinho">Total: R$ 0,00</p>
+    <button onclick="fecharCarrinho()">Fechar</button>
+  </div>
+</div>
+
 
 </div>
 
