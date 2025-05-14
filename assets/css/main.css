@@ -3056,3 +3056,38 @@ ul.social li a.fa-google-plus:hover {
         margin: 0.5em 0;
     }
 }
+
+.about {
+  margin: 0.75em 5em 2.5em 5em;
+  padding: 4em 5em 4em 5em;
+  background-color: white;
+}
+
+.petshop {
+  max-width: 20em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.galery {
+  display: flex;
+  justify-content: center; /* centraliza as imagens no container */
+  gap: 20px; /* espaço entre as imagens */
+  flex-wrap: wrap; /* permite quebrar para próxima linha em telas menores */
+  margin-top: 20px;
+}
+
+.galery figure {
+  width: 300px; /* ou ajuste conforme o tamanho desejado */
+  text-align: center;
+  margin: 0;
+}
+
+.galery img {
+  width: 100%;
+  height: 20em;
+  border-radius: 8px;
+}
