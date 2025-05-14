@@ -1,4 +1,17 @@
+
+1 of 30
+(no subject)
+
+Janiele Nascimento Bastos <janiele.nascimento.2426@gmail.com>
+Attachments
+8:51 AM (3 hours ago)
+to goldenfoxjunior
+
+
+ One attachment
+  •  Scanned by Gmail
 <!DOCTYPE HTML>
+
 <html>
 
 <head>
@@ -7,63 +20,111 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 <style>
-	    .produtos {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        margin-top: 30px;
-    }
+	.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
 
-    .produto {
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        width: 280px;
-        padding: 20px;
-        text-align: center;
-        transition: transform 0.2s;
-    }
+.produto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 380px; /* Ajuste para dar mais espaço */
+}
 
-    .produto:hover {
-        transform: translateY(-5px);
-    }
+.produto:hover {
+    transform: translateY(-5px);
+}
 
-    .produto img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        border-radius: 8px;
-        margin-bottom: 15px;
-    }
+.produto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
 
-    .produto h3 {
-        color: #ff6600;
-        font-size: 1.2em;
-        margin: 10px 0;
-    }
+.produto h3 {
+    color: #ff6600;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
 
-    .produto p {
-        font-size: 0.95em;
-        color: #555;
-    }
+.produto p {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 10px;
+}
 
-    .produto .botao {
-        display: inline-block;
-        margin-top: 10px;
-        padding: 8px 16px;
-        background-color: #ff6600;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        font-weight: bold;
-        transition: background-color 0.3s;
-    }
+.produto .preco {
+    font-size: 1.1em;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+}
 
-    .produto .botao:hover {
-        background-color: #e65c00;
+.produto .botao {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 100%;
+}
+
+.produto .botao:hover {
+    background-color: #e65c00;
+}
+
+/* Estilo do botão "Comprar" */
+.botao {
+    display: inline-block;
+    text-align: center;
+    font-size: 1em;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #e65c00;
+}
+
+    .h2produtos {
+      display: inline-block;      
+      background-color: black;     
+      color: white;              
+      border: 2px solid white;    
+      padding: 10px 20px;         
+      border-radius: 8px;         
     }
+	.sectionprodutos{
+		
+      text-align: center;
+	}
+
+
 </style>
 
 </head>
@@ -71,294 +132,321 @@
 <body class="left-sidebar is-preload">
 	<div id="page-wrapper">
 
-		<!-- Cabeçalho -->
-		<section id="header">
-			<h1><a href="index.html">Pet Shop Feliz</a></h1>
+	<!-- Cabeçalho -->
+	<section id="header">
+		<h1><a href="index.html">Pet Shop Feliz</a></h1>
 
-			<!-- Navegação -->
-			<nav id="nav">
-				<ul>
-					<li><a href="index.html">Início</a></li>
-					<li>
-						<a href="agendamentos.html">Agendamentos</a>
-						<ul>
-							<li><a href="produtos.html">Produtos</a></li>
-							<li><a href="servicos.html">Serviços</a></li>
-							<li><a href="contato.html">Contato</a></li>
+		<!-- Navegação -->
+		<nav id="nav">
+			<ul>
+				<li><a href="index.html">Início</a></li>
+				<li>
+					<a href="agendamentos.html">Agendamentos</a>
+					<ul>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="servicos.html">Serviços</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</li>
+				<li class="current"><a href="produtos.html">Produtos</a></li>
+				<li><a href="servicos.html">Serviços</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
+		</nav>
+	</section>
+
+	<!-- Principal -->
+	<section id="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-4 col-12-medium">
+
+					<!-- Lateral -->
+					<section class="box">
+						<a class="image featured"><img src="https://espacopetshop.com.br/wp-content/uploads/2020/02/cachorro-comendo-ra%C3%A7%C3%A3o.jpg" alt="Ração para cães" /></a>
+						<header>
+							<h3>Ração Premium</h3>
+						</header>
+						<p>Rações nutritivas e saborosas para cães e gatos de todas as idades. Garantia de saúde e bem-estar para seu pet.</p>
+						<footer>
+							<a href="#produtos" class="button alt">Ver detalhes</a>
+						</footer>
+					</section>
+
+					<section class="box">
+						<header>
+							<h3>Acessórios e Brinquedos</h3>
+						</header>
+						<p>Encontre coleiras, brinquedos interativos, camas e muito mais para deixar seu pet feliz e confortável.</p>
+						<ul class="divided">
+							<li>Coleiras e peitorais</li>
+							<li>Brinquedos resistentes</li>
+							<li>Caminhas e casinhas</li>
+							<li>Bebedouros e comedouros</li>
 						</ul>
-					</li>
-					<li class="current"><a href="produtos.html">Produtos</a></li>
-					<li><a href="servicos.html">Serviços</a></li>
-					<li><a href="contato.html">Contato</a></li>
-				</ul>
-			</nav>
-		</section>
+						<footer>
+							<a href="#acessorio" class="button alt">Comprar agora</a>
+						</footer>
+					</section>
+				</div>
 
-		<!-- Principal -->
-		<section id="main">
-			<div class="container">
-				<div class="row">
-					<div class="col-4 col-12-medium">
+				<div class="col-8 col-12-medium imp-medium">
+					<!-- Conteúdo Principal -->
+					<article class="box post">
+						<a class="image featured"><img src="https://nfpet.com.br/blog/wp-content/uploads/2018/09/21-09-750x410.png" alt="Loja de produtos pet" /></a>
+						<header>
+							<h2>Conheça nossos produtos</h2>
+							<p>Qualidade e cuidado para seu melhor amigo</p>
+						</header>
+						<p>
+							No Pet Shop Feliz, você encontra uma grande variedade de produtos de alta qualidade para o seu pet. Trabalhamos com as melhores marcas de rações, petiscos, brinquedos, produtos de higiene e muito mais.
+						</p>
+						<p>
+							Nossa missão é proporcionar saúde, bem-estar e alegria para os animais e seus tutores. Com atendimento especializado e carinho em cada detalhe, garantimos uma experiência completa de compras.
+						</p>
 
-						<!-- Lateral -->
-						<section class="box">
-							<a class="image featured"><img src="https://espacopetshop.com.br/wp-content/uploads/2020/02/cachorro-comendo-ra%C3%A7%C3%A3o.jpg" alt="Ração para cães" /></a>
+						<section>
 							<header>
-								<h3>Ração Premium</h3>
-							</header>
-							<p>Rações nutritivas e saborosas para cães e gatos de todas as idades. Garantia de saúde e bem-estar para seu pet.</p>
-							<footer>
-								<a href="#produtos" class="button alt">Ver detalhes</a>
-							</footer>
-						</section>
-
-						<section class="box">
-							<header>
-								<h3>Acessórios e Brinquedos</h3>
-							</header>
-							<p>Encontre coleiras, brinquedos interativos, camas e muito mais para deixar seu pet feliz e confortável.</p>
-							<ul class="divided">
-								<li><a href="#">Coleiras e peitorais</a></li>
-								<li><a href="#">Brinquedos resistentes</a></li>
-								<li><a href="#">Caminhas e casinhas</a></li>
-								<li><a href="#">Bebedouros e comedouros</a></li>
-							</ul>
-							<footer>
-								<a href="#" class="button alt">Comprar agora</a>
-							</footer>
-						</section>
-					</div>
-
-					<div class="col-8 col-12-medium imp-medium">
-						<!-- Conteúdo Principal -->
-						<article class="box post">
-							<a class="image featured"><img src="https://nfpet.com.br/blog/wp-content/uploads/2018/09/21-09-750x410.png" alt="Loja de produtos pet" /></a>
-							<header>
-								<h2>Conheça nossos produtos</h2>
-								<p>Qualidade e cuidado para seu melhor amigo</p>
+								<h3>Produtos em destaque</h3>
 							</header>
 							<p>
-								No Pet Shop Feliz, você encontra uma grande variedade de produtos de alta qualidade para o seu pet. Trabalhamos com as melhores marcas de rações, petiscos, brinquedos, produtos de higiene e muito mais.
+								✔ Rações para todas as idades e raças<br>
+								✔ Petiscos naturais e saudáveis<br>
+								✔ Shampoo e colônias com fórmulas suaves<br>
+								✔ Acessórios estilosos e confortáveis<br>
+								✔ Brinquedos educativos e duráveis
 							</p>
+						</section>
+
+						<section>
+							<header>
+								<h3>Promoções especiais</h3>
+							</header>
 							<p>
-								Nossa missão é proporcionar saúde, bem-estar e alegria para os animais e seus tutores. Com atendimento especializado e carinho em cada detalhe, garantimos uma experiência completa de compras.
+								Toda semana temos promoções exclusivas em rações e acessórios. Fique de olho em nosso site e redes sociais para aproveitar!
 							</p>
-
-							<section>
-								<header>
-									<h3>Produtos em destaque</h3>
-								</header>
-								<p>
-									✔ Rações para todas as idades e raças<br>
-									✔ Petiscos naturais e saudáveis<br>
-									✔ Shampoo e colônias com fórmulas suaves<br>
-									✔ Acessórios estilosos e confortáveis<br>
-									✔ Brinquedos educativos e duráveis
-								</p>
-							</section>
-
-							<section>
-								<header>
-									<h3>Promoções especiais</h3>
-								</header>
-								<p>
-									Toda semana temos promoções exclusivas em rações e acessórios. Fique de olho em nosso site e redes sociais para aproveitar!
-								</p>
-							</section>
-						</article>
-					</div>
+						</section>
+					</article>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-<section id ="main">
-    <h2 align="center"  id="produtos">🐶 Para Cães</h2>
+
+<section id ="main" class="sectionprodutos">
+    <h2 align="center" class="h2produtos">🐶 Para Cães</h2>
     <div class="produtos" >
         <div class="produto">
             <img src="https://cobasi.vteximg.com.br/arquivos/ids/939252/racao-golden-special-para-caes-adultos-frango-e-carne-3310549-15kg-Frente.jpg?v=638757374687300000" alt="Golden Special Cães">
             <h3>Golden Special</h3>
             <p>Ração sabor frango e arroz para cães adultos. Alta digestibilidade.</p>
+			 <p><strong>Preço:</strong> R$ 139,90</p>
+    		<a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
             <img src="https://petshopamarosbichos.fbitsstatic.net/img/p/racao-premier-racas-especificas-spitz-alemao-para-caes-adultos-71853/259161-2.jpg?w=420&h=420&v=no-change&qs=ignore" alt="Premier Pet Raças Específicas">
             <h3>Premier Raças Específicas</h3>
             <p>Formulação ideal para cada raça. Mais saúde e vitalidade.</p>
+			 <p><strong>Preço:</strong> R$ 139,90</p>
+    <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
             <img src="https://m.media-amazon.com/images/I/511x4A38H1L._AC_UF1000,1000_QL80_.jpg" alt="Royal Canin Cães">
             <h3>Royal Canin</h3>
             <p>Rações específicas por porte, idade e necessidades especiais.</p>
+			 <p><strong>Preço:</strong> R$ 139,90</p>
+    <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
-            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com.br%2FRa%25C3%25A7%25C3%25A3o-Guabi-Natural-Pequenas-Frango%2Fdp%2FB07Y2CZ31P&psig=AOvVaw223oyRNyk_JCK7Jz5tm4bj&ust=1747265879992000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCIDVi-LOoY0DFQAAAAAdAAAAABAE" alt="Guabi Natural Cães">
+            <img src="https://m.media-amazon.com/images/I/519zCPugIvL.jpg" alt="Guabi Natural Cães">
             <h3>Guabi Natural</h3>
             <p>Sem corantes ou transgênicos. Com ingredientes naturais.</p>
+			 <p><strong>Preço:</strong> R$ 139,90</p>
+    <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
             <img src="https://www.petlove.com.br/images/products/230249/product/Ra%C3%A7%C3%A3o_Seca_Nestl%C3%A9_Purina_Pro_Plan_Frango_C%C3%A3es_Adultos_Ra%C3%A7as_M%C3%A9dias_3105259_15.jpg?1627734333" alt="Pro Plan Cães">
             <h3>Pro Plan</h3>
             <p>Rica em probióticos e proteínas de alta qualidade.</p>
+			 <p><strong>Preço:</strong> R$ 139,90</p>
+    <a href="#" class="botao">Comprar</a>
         </div>
     </div>
 </section>
 
-<section id="main">
-    <h2 align="center">🐱 Para Gatos</h2>
+<section id="main" class="sectionprodutos">
+    <h2 align="center"  class="h2produtos">🐱 Para Gatos</h2>
     <div class="produtos">
         <div class="produto">
-            <img src="images/royal-canin-gato.jpg" alt="Royal Canin Gatos">
+            <img src="https://cobasi.vteximg.com.br/arquivos/ids/316962/Gato-Adulto-Castrado.jpg?v=638127719556300000" alt="Royal Canin Gatos">
             <h3>Royal Canin</h3>
             <p>Fórmulas para gatos castrados, peludos ou com sensibilidades.</p>
+			 <p><strong>Preço:</strong> R$ 139,90</p>
+    <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
-            <img src="images/premier-gato.jpg" alt="Premier Gato Castrado">
+            <img src="https://cobasi.vteximg.com.br/arquivos/ids/1043119/Racao-Premier-Gatos-Castrados-7-a-11-Anos-Ambientes-Internos-Frango-7.5kg-frente.png?v=638137343197230000" alt="Premier Gato Castrado">
             <h3>Premier Gato Castrado</h3>
             <p>Ajuda no controle do peso e na saúde urinária.</p>
+			 <p><strong>Preço:</strong> R$ 139,90</p>
+    <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
-            <img src="images/golden-gato.jpg" alt="Golden Gatos">
+            <img src="https://cobasi.vteximg.com.br/arquivos/ids/818262/racao-golden-gatos-adultos-sabor-carne-1kg.jpg?v=638127777113830000" alt="Golden Gatos">
             <h3>Golden Gatos</h3>
             <p>Ração saborosa e equilibrada para gatos adultos.</p>
+			 <p><strong>Preço:</strong> R$ 139,90</p>
+    <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
-            <img src="images/granplus-gato.jpg" alt="GranPlus Gourmet Gatos">
+            <img src="https://io.convertiez.com.br/m/agropetmineiro/shop/products/images/890/medium/racao-seca-gran-plus-gourmet-caes-adultos-mini-ovelha-e-arroz-1kg_1917.png" alt="GranPlus Gourmet Gatos">
             <h3>GranPlus Gourmet</h3>
             <p>Com taurina, essencial para saúde dos olhos e coração dos felinos.</p>
+			 <p><strong>Preço:</strong> R$ 139,90</p>
+    <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
-            <img src="images/proplan-gato.jpg" alt="Pro Plan Gatos">
+            <img src="https://www.reidosanimais.com.br/media/catalog/product/cache/1/image/380x350/9df78eab33525d08d6e5fb8d27136e95/g/a/gato_adulto_frenre_pro_plan_2.png" alt="Pro Plan Gatos">
             <h3>Pro Plan</h3>
             <p>Imunidade reforçada e nutrientes de alto desempenho.</p>
+			 <p><strong>Preço:</strong> R$ 139,90</p>
+    <a href="#" class="botao">Comprar</a>
         </div>
     </div>
 </section>
 
-
-<section id="main">
-    <h2 align="center">🎁 Acessórios e Brinquedos</h2>
+<section id="main" class="sectionprodutos">
+    <h2 align="center" id="acessorio"  class="h2produtos">🎁 Acessórios e Brinquedos</h2>
     <div class="produtos">
         <div class="produto">
-            <img src="https://cdn.awsli.com.br/600x450/2017/2017545/produto/195076503/16f91ae47c.jpg" alt="Coleira para cães">
+            <img src="https://a-static.mlcdn.com.br/800x560/coleira-para-cachorro-ajustavel-rosa-unica-mix/unicamixcombr/cn108ros-m/2d5baf7fc173c87592c1a183d14feb93.jpeg" alt="Coleira para cães">
             <h3>Coleira Ajustável</h3>
             <p>Conforto e segurança para o seu pet em todos os passeios.</p>
+			 <p><strong>Preço:</strong> R$ 139,90</p>
+    <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
-            <img src="https://cdn.petz.com.br/fotos/1623088063309.jpg" alt="Brinquedo mordedor">
+            <img src="" alt="Brinquedo mordedor">
             <h3>Brinquedo Mordedor</h3>
             <p>Ajuda a manter a saúde bucal e reduz o estresse do pet.</p>
+			 <p><strong>Preço:</strong> R$ 139,90</p>
+    <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
-            <img src="https://img.irroba.com.br/fit-in/300x300/filters:fill(fff)/mydog/lojavirtual/157/1676901479_2.jpg" alt="Caminha pet">
+            <img src="" alt="Caminha pet">
             <h3>Caminha Estofada</h3>
             <p>Super macia, ideal para o descanso dos pets pequenos e médios.</p>
+			 <p><strong>Preço:</strong> R$ 139,90</p>
+    <a href="#" class="botao">Comprar</a>
         </div>
         <div class="produto">
-            <img src="https://static3.tcdn.com.br/img/img_prod/460977/comedouro_duplo_em_aco_inox_para_caes_e_gatos_425_1_20200427134924.jpg" alt="Comedouro">
+            <img src="" alt="Comedouro">
             <h3>Comedouro Duplo</h3>
             <p>Prático e higiênico, ideal para ração e água no mesmo suporte.</p>
+			 <p><strong>Preço:</strong> R$ 139,90</p>
+    <a href="#" class="botao">Comprar</a>
         </div>
     </div>
 </section>
 
+	<!-- Rodapé -->
+	<section id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-8 col-12-medium">
+					<section>
+						<header>
+							<h2>Dicas para cuidar do seu pet</h2>
+						</header>
+						<ul class="dates">
+							<li>
+								<span class="date">Mai <strong>10</strong></span>
+								<h3><a href="#">Como escolher a ração ideal</a></h3>
+								<p>Veja dicas de especialistas para garantir a nutrição certa para seu pet.</p>
+							</li>
+							<li>
+								<span class="date">Abr <strong>28</strong></span>
+								<h3><a href="#">Brinquedos que estimulam o pet</a></h3>
+								<p>Conheça os brinquedos que ajudam no desenvolvimento físico e mental.</p>
+							</li>
+						</ul>
+					</section>
+				</div>
+				<div class="col-4 col-12-medium">
+					<section>
+						<header>
+							<h2>Sobre nós</h2>
+						</header>
+						<a href="#" class="image featured"><img src="images/logo-pet.jpg" alt="" /></a>
+						<p>
+							O Pet Shop Feliz é um espaço feito com amor para você e seu melhor amigo. Trabalhamos com produtos de qualidade e atendimento com carinho.
+						</p>
+						<footer>
+							<ul class="actions">
+								<li><a href="contato.html" class="button">Fale conosco</a></li>
+							</ul>
+						</footer>
+					</section>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<section>
+						<header>
+							<h2>Categorias populares</h2>
+						</header>
+						<ul class="divided">
+							<li><a href="#">Rações</a></li>
+							<li><a href="#">Petiscos</a></li>
+							<li><a href="#">Brinquedos</a></li>
+							<li><a href="#">Higiene</a></li>
+							<li><a href="#">Acessórios</a></li>
+						</ul>
+					</section>
+				</div>
+				<div class="col-4 col-12-medium">
+					<section>
+						<header>
+							<h2>Redes sociais</h2>
+						</header>
+						<ul class="social">
+							<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+							<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+							<li><a class="icon brands fa-whatsapp" href="#"><span class="label">WhatsApp</span></a></li>
+						</ul>
+						<ul class="contact">
+							<li>
+								<h3>Endereço</h3>
+								<p>
+									Rua dos Pets, 123<br />
+									Bairro Felicidade<br />
+									São Paulo - SP
+								</p>
+							</li>
+							<li>
+								<h3>Email</h3>
+								<p><a href="mailto:contato@petshopfeliz.com">contato@petshopfeliz.com</a></p>
+							</li>
+							<li>
+								<h3>Telefone</h3>
+								<p>(11) 99999-9999</p>
+							</li>
+						</ul>
+					</section>
+				</div>
 
-		<!-- Rodapé -->
-		<section id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-8 col-12-medium">
-						<section>
-							<header>
-								<h2>Dicas para cuidar do seu pet</h2>
-							</header>
-							<ul class="dates">
-								<li>
-									<span class="date">Mai <strong>10</strong></span>
-									<h3><a href="#">Como escolher a ração ideal</a></h3>
-									<p>Veja dicas de especialistas para garantir a nutrição certa para seu pet.</p>
-								</li>
-								<li>
-									<span class="date">Abr <strong>28</strong></span>
-									<h3><a href="#">Brinquedos que estimulam o pet</a></h3>
-									<p>Conheça os brinquedos que ajudam no desenvolvimento físico e mental.</p>
-								</li>
-							</ul>
-						</section>
-					</div>
-					<div class="col-4 col-12-medium">
-						<section>
-							<header>
-								<h2>Sobre nós</h2>
-							</header>
-							<a href="#" class="image featured"><img src="images/logo-pet.jpg" alt="" /></a>
-							<p>
-								O Pet Shop Feliz é um espaço feito com amor para você e seu melhor amigo. Trabalhamos com produtos de qualidade e atendimento com carinho.
-							</p>
-							<footer>
-								<ul class="actions">
-									<li><a href="contato.html" class="button">Fale conosco</a></li>
-								</ul>
-							</footer>
-						</section>
-					</div>
-					<div class="col-4 col-6-medium col-12-small">
-						<section>
-							<header>
-								<h2>Categorias populares</h2>
-							</header>
-							<ul class="divided">
-								<li><a href="#">Rações</a></li>
-								<li><a href="#">Petiscos</a></li>
-								<li><a href="#">Brinquedos</a></li>
-								<li><a href="#">Higiene</a></li>
-								<li><a href="#">Acessórios</a></li>
-							</ul>
-						</section>
-					</div>
-					<div class="col-4 col-12-medium">
-						<section>
-							<header>
-								<h2>Redes sociais</h2>
-							</header>
-							<ul class="social">
-								<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
-								<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
-								<li><a class="icon brands fa-whatsapp" href="#"><span class="label">WhatsApp</span></a></li>
-							</ul>
-							<ul class="contact">
-								<li>
-									<h3>Endereço</h3>
-									<p>
-										Rua dos Pets, 123<br />
-										Bairro Felicidade<br />
-										São Paulo - SP
-									</p>
-								</li>
-								<li>
-									<h3>Email</h3>
-									<p><a href="mailto:contato@petshopfeliz.com">contato@petshopfeliz.com</a></p>
-								</li>
-								<li>
-									<h3>Telefone</h3>
-									<p>(11) 99999-9999</p>
-								</li>
-							</ul>
-						</section>
-					</div>
-
-					<div class="col-12">
-						<div id="copyright">
-							<ul class="links">
-								<li>&copy; Pet Shop Feliz. Todos os direitos reservados.</li>
-								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
+				<div class="col-12">
+					<div id="copyright">
+						<ul class="links">
+							<li>&copy; Pet Shop Feliz. Todos os direitos reservados.</li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-	</div>
+</div>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.dropotron.min.js"></script>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
