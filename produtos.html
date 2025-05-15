@@ -30,7 +30,7 @@ justify-content: space-between;
 height: 380px; 
 }
 
-.produto\:hover {
+.produto:hover {
 transform: translateY(-5px);
 }
 
@@ -43,7 +43,7 @@ margin-bottom: 15px;
 }
 
 .produto h3 {
-color: #ff6600;
+color: #b27018;
 font-size: 1.2em;
 margin: 10px 0;
 }
@@ -65,7 +65,7 @@ margin-top: 10px;
 display: inline-block;
 margin-top: 10px;
 padding: 10px 20px;
-background-color: #ff6600;
+background-color: #b27018;
 color: #fff;
 border: none;
 border-radius: 5px;
@@ -77,7 +77,7 @@ width: 100%;
 }
 
 .produto .botao:hover {
-background-color: #e65c00;
+background-color: #b27018;
 }
 
 .botao {
@@ -85,7 +85,7 @@ display: inline-block;
 text-align: center;
 font-size: 1em;
 padding: 10px 20px;
-background-color: #ff6600;
+background-color: #b27018;
 color: #fff;
 border: none;
 border-radius: 5px;
@@ -95,7 +95,7 @@ font-weight: bold;
 }
 
 .botao:hover {
-background-color: #e65c00;
+background-color:#b27018;
 }
 .h2produtos {
   display: inline-block;
@@ -112,7 +112,45 @@ background-color: #e65c00;
   padding: 40px 0;
   text-align: center;
 }
+#carrinho-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    border: 2px solid #b27018;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(255, 102, 0, 0.2);
+}
 
+#lista-carrinho li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.remover-item {
+    background-color: #e60000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section {
+    width: 90%;
+  }
+
+  #carrinho {
+    width: 90%;
+  }
+}
 
 </style>
 
@@ -225,34 +263,44 @@ background-color: #e65c00;
     <h2 align="center" class="h2produtos" id="detalhes">🐶 Para Cães</h2>
     <div class="produtos" >
         <div class="produto">
-            <img src="https://cobasi.vteximg.com.br/arquivos/ids/939252/racao-golden-special-para-caes-adultos-frango-e-carne-3310549-15kg-Frente.jpg?v=638757374687300000" alt="Golden Special Cães">
+            <img src="https://cobasi.vteximg.com.br/arquivos/ids/939252/racao-golden-special-para-caes-adultos-frango-e-carne-3310549-15kg-Frente.jpg?v=638757374687300000" alt=" Cães">
             <h3>Golden Special</h3>
 			 <p><strong>Preço:</strong> R$ 126,00</p>
-    		<a href="#" class="botao">Comprar</a>
+    		
+        <button class="botao" onclick="adicionarAoCarrinho('Golden Special',126.00)">Comprar</button>
+
         </div>
         <div class="produto">
             <img src="https://petshopamarosbichos.fbitsstatic.net/img/p/racao-premier-racas-especificas-spitz-alemao-para-caes-adultos-71853/259161-2.jpg?w=420&h=420&v=no-change&qs=ignore" alt="Premier Pet Raças Específicas">
             <h3>Premier Raças Específicas</h3>
 			 <p><strong>Preço:</strong> R$ 94,81</p>
-    <a href="#" class="botao">Comprar</a>
+    
+    <button class="botao" onclick="adicionarAoCarrinho('Premier Raças Específicas',94.81)">Comprar</button>
+
         </div>
         <div class="produto">
             <img src="https://m.media-amazon.com/images/I/511x4A38H1L._AC_UF1000,1000_QL80_.jpg" alt="Royal Canin Cães">
             <h3>Royal Canin</h3>
 			 <p><strong>Preço:</strong> R$ 135,92</p>
-    <a href="#" class="botao">Comprar</a>
+    
+    <button class="botao" onclick="adicionarAoCarrinho('Royal Canin',135.92)">Comprar</button>
+
         </div>
         <div class="produto">
             <img src="https://m.media-amazon.com/images/I/519zCPugIvL.jpg" alt="Guabi Natural Cães">
             <h3>Guabi Natural</h3>
 			 <p><strong>Preço:</strong> R$ 256,90</p>
-    <a href="#" class="botao">Comprar</a>
+    
+    <button class="botao" onclick="adicionarAoCarrinho('Guabi Natural',256.90)">Comprar</button>
+
         </div>
         <div class="produto">
             <img src="https://www.petlove.com.br/images/products/230249/product/Ra%C3%A7%C3%A3o_Seca_Nestl%C3%A9_Purina_Pro_Plan_Frango_C%C3%A3es_Adultos_Ra%C3%A7as_M%C3%A9dias_3105259_15.jpg?1627734333" alt="Pro Plan Cães">
             <h3>Pro Plan</h3>
 			 <p><strong>Preço:</strong> R$ 226,72</p>
-    <a href="#" class="botao">Comprar</a>
+    
+    <button class="botao" onclick="adicionarAoCarrinho('Pro Plan',226.72)">Comprar</button>
+
         </div>
     </div>
 </section>
@@ -264,31 +312,41 @@ background-color: #e65c00;
             <img src="https://cobasi.vteximg.com.br/arquivos/ids/316962/Gato-Adulto-Castrado.jpg?v=638127719556300000" alt="Royal Canin Gatos">
             <h3>Royal Canin</h3>
 			 <p><strong>Preço:</strong> R$ 379,90</p>
-    <a href="#" class="botao">Comprar</a>
+    
+    <button class="botao" onclick="adicionarAoCarrinho('Royal Canin',379.90)">Comprar</button>
+
         </div>
         <div class="produto">
             <img src="https://cobasi.vteximg.com.br/arquivos/ids/1043119/Racao-Premier-Gatos-Castrados-7-a-11-Anos-Ambientes-Internos-Frango-7.5kg-frente.png?v=638137343197230000" alt="Premier Gato Castrado">
             <h3>Premier Gato Castrado</h3>
 			 <p><strong>Preço:</strong> R$ 86,5</p>
-    <a href="#" class="botao">Comprar</a>
+    
+    <button class="botao" onclick="adicionarAoCarrinho('Premier Gato Castrado',86.5)">Comprar</button>
+
         </div>
         <div class="produto">
             <img src="https://cobasi.vteximg.com.br/arquivos/ids/818262/racao-golden-gatos-adultos-sabor-carne-1kg.jpg?v=638127777113830000" alt="Golden Gatos">
             <h3>Golden Gatos</h3>
 			 <p><strong>Preço:</strong> R$ 31,50</p>
-    <a href="#" class="botao">Comprar</a>
+    
+    <button class="botao" onclick="adicionarAoCarrinho('Golden Gatos',31.50)">Comprar</button>
+
         </div>
         <div class="produto">
             <img src="https://io.convertiez.com.br/m/agropetmineiro/shop/products/images/890/medium/racao-seca-gran-plus-gourmet-caes-adultos-mini-ovelha-e-arroz-1kg_1917.png" alt="GranPlus Gourmet Gatos">
             <h3>GranPlus Gourmet</h3>
 			 <p><strong>Preço:</strong> R$ 192,90</p>
-    <a href="#" class="botao">Comprar</a>
+    
+    <button class="botao" onclick="adicionarAoCarrinho('GranPlus Gourmet',192.90)">Comprar</button>
+
         </div>
         <div class="produto">
             <img src="https://www.reidosanimais.com.br/media/catalog/product/cache/1/image/380x350/9df78eab33525d08d6e5fb8d27136e95/g/a/gato_adulto_frenre_pro_plan_2.png" alt="Pro Plan Gatos">
             <h3>Pro Plan</h3>
 			 <p><strong>Preço:</strong> R$ 296,99</p>
-    <a href="#" class="botao">Comprar</a>
+    
+    <button class="botao" onclick="adicionarAoCarrinho('Pro Plan',296.99)">Comprar</button>
+
         </div>
     </div>
 </section>
@@ -300,25 +358,32 @@ background-color: #e65c00;
             <img src="https://a-static.mlcdn.com.br/800x560/coleira-para-cachorro-ajustavel-rosa-unica-mix/unicamixcombr/cn108ros-m/2d5baf7fc173c87592c1a183d14feb93.jpeg" alt="Coleira para cães">
             <h3>Coleira Ajustável</h3>
 			 <p><strong>Preço:</strong> R$ 16,14</p>
-    <a href="#" class="botao">Comprar</a>
+    
+    <button class="botao" onclick="adicionarAoCarrinho('Coleira Ajustavel',16.14)">Comprar</button>
+
         </div>
         <div class="produto">
             <img src="https://images.tcdn.com.br/img/img_prod/470728/brinquedo_mordedor_ratinho_real_com_apito_para_gatos_13125_2_8e8ed937c976d301b6ce11f30309e52d.jpg" alt="Brinquedo mordedor">
             <h3>Brinquedo Mordedor</h3>
 			 <p><strong>Preço:</strong> R$ 32,18</p>
-    <a href="#" class="botao">Comprar</a>
+    
+    <button class="botao" onclick="adicionarAoCarrinho('Brinquedo Mordedor',32.18)">Comprar</button>
+
         </div>
         <div class="produto">
             <img src="https://cdn.leroymerlin.com.br/products/cama_pet_retangular_resistente_caminha_estofada_almofada_remo_1571640361_f78b_600x600.jpg" alt="Caminha pet">
             <h3>Caminha Estofada</h3>
 			 <p><strong>Preço:</strong> R$ 163,66</p>
-    <a href="#" class="botao">Comprar</a>
+    
+    <button class="botao" onclick="adicionarAoCarrinho('Caminha Estofada',163.66)">Comprar</button>
+
         </div>
         <div class="produto">
             <img src="https://plasvale.cdn.magazord.com.br/img/2023/07/produto/94/comedouro-duplo-removivel-199-variacao-37-1-20201130131844.jpeg?ims=fit-in/600x600/filters:fill(white)" alt="Comedouro">
             <h3>Comedouro Duplo</h3>
 			 <p><strong>Preço:</strong> R$ 78,90</p>
-    <a href="#" class="botao">Comprar</a>
+    <button class="botao" onclick="adicionarAoCarrinho('Comedouro Duplo', 78.90)">Comprar</button>
+
         </div>
     </div>
 </section>
@@ -432,35 +497,40 @@ background-color: #e65c00;
 
 <!-- Scripts -->
 <script>
-    const carrinho = [];
-    const listaCarrinho = document.getElementById('lista-carrinho');
-    const totalCarrinho = document.getElementById('total-carrinho');
+   
+let carrinho = [];
 
-    document.querySelectorAll('.botao').forEach(btn => {
-        btn.addEventListener('click', function(event) {
-            event.preventDefault();
-            const produto = this.closest('.produto');
-            const nome = produto.querySelector('h3').textContent;
-            const precoTexto = produto.querySelector('p').textContent;
-            const preco = parseFloat(precoTexto.replace('Preço: R$', '').replace(',', '.').trim());
+function atualizarCarrinho() {
+    const lista = document.getElementById('lista-carrinho');
+    const totalSpan = document.getElementById('total-carrinho');
+    lista.innerHTML = '';
+    let total = 0;
 
-            carrinho.push({ nome, preco });
-            atualizarCarrinho();
-        });
+    carrinho.forEach((item, index) => {
+        total += item.preco;
+        const li = document.createElement('li');
+        li.innerHTML = `
+            ${item.nome} - R$ ${item.preco.toFixed(2)}
+            <button class="remover-item" onclick="removerDoCarrinho(${index})">Remover</button>
+        `;
+        lista.appendChild(li);
     });
 
-    function atualizarCarrinho() {
-        listaCarrinho.innerHTML = '';
-        let total = 0;
-        carrinho.forEach(item => {
-            const li = document.createElement('li');
-            li.textContent = `${item.nome} - R$ ${item.preco.toFixed(2)}`;
-            listaCarrinho.appendChild(li);
-            total += item.preco;
-        });
-        totalCarrinho.textContent = total.toFixed(2);
-    }
+    totalSpan.textContent = total.toFixed(2);
+}
+
+function adicionarAoCarrinho(nome, preco) {
+    carrinho.push({ nome, preco });
+    atualizarCarrinho();
+}
+
+function removerDoCarrinho(index) {
+    carrinho.splice(index, 1);
+    atualizarCarrinho();
+}
 </script>
+
+
 
 <script src="assets/js/jquery.min.js"></script>
 
