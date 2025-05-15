@@ -3056,3 +3056,24 @@ ul.social li a.fa-google-plus:hover {
         margin: 0.5em 0;
     }
 }
+
+
+.form {
+  width: 50%;   
+}
+
+.form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #444;
+  margin-top: 1rem;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
