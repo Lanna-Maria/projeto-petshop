@@ -1,31 +1,42 @@
-Dopetrope by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+# 🐾 PetShop Website
 
+Este repositório contém o **projeto integrador** desenvolvido em equipe durante o **módulo básico** do curso **Desenvolvimento Web Full Stack** oferecido pelo **Capacita Brasil**.
 
-A spiffy new blog/magazine style responsive site template with a flat/minimal
-design aesthetic.
+## 📚 Sobre o Projeto
 
-Demo images* are courtesy of the incredibly talented Janine Pring aka Dreametry Doodle.
-See more of her amazing work (and her awesome t-shirt line) @ dreametrydoodle.com
+O projeto consistiu na criação de um site responsivo e funcional para um PetShop fictício. O objetivo principal foi aplicar os conhecimentos adquiridos ao longo do curso, como HTML, CSS, organização de layout, responsividade e boas práticas de desenvolvimento.
 
-(* = Not included! Only meant for use with my own on-site demo, so please do NOT download
-and/or use any of Janine's work without her explicit permission!)
+O site apresenta uma interface clara e intuitiva, com seções voltadas para os serviços oferecidos, contato, diferenciais e uma experiência visual agradável para o usuário.
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+### 🔗 Acesse o site online:
 
-AJ
-aj@lkn.io | @ajlkn
+👉 [Clique aqui para acessar o site do PetShop](https://lanna-maria.github.io/projeto-petshop/index.html)
 
+## 👨‍💻 Equipe de Desenvolvimento
 
-Credits:
+### Integrantes:
 
-	Demo Images:
-		Dreametry Doodle (dreametrydoodle.com)
+- Janiele (https://github.com/janiele376);
+- Jennifer (https://github.com/karla08C);
+- Lanna Maria (https://github.com/lanna-maria);
+- Pedro Panzo (https://github.com/pedropanzo);
+- Rhayssa (https://github.com/rhayssacosta);
+- Saul (https://github.com/SAUL-ALVES).
 
-	Icons:
-		Font Awesome (fontawesome.io)
+Este site foi desenvolvido **em equipe**, como parte do aprendizado colaborativo do curso. Todos os integrantes participaram das etapas de planejamento, estruturação e implementação do projeto.
 
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+> ✅ Sinta-se à vontade para clonar, estudar e se inspirar neste projeto!
+
+## 💻 Tecnologias Utilizadas
+
+- **HTML5** – estruturação do conteúdo  
+- **CSS3** – estilização do layout  
+- **JavaScript** – interatividade básica  
+- **Template base:** [Dopetrope](https://html5up.net/dopetrope) by HTML5 UP  
+- **Font Awesome** – biblioteca de ícones  
+- **jQuery** – interações e efeitos  
+- **Responsive Tools** – ferramentas para responsividade (by AJ - HTML5 UP)
+
+## 🎨 Layout
+
+O layout utiliza o template **Dopetrope**, que possui estilo **flat/minimalista** com uma pegada de **blog/revista**. É 100% responsivo, adaptando-se bem a diversos tamanhos de tela, desde desktops até smartphones.
