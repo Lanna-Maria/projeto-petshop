@@ -24,6 +24,10 @@
 			padding: 20px;
 			text-align: center;
 			transition: transform 0.2s;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 380px;
 		}
 
 		.produto:hover {
@@ -39,7 +43,7 @@
 		}
 
 		.produto h3 {
-			color: #ff6600;
+			color: #b27018;
 			font-size: 1.2em;
 			margin: 10px 0;
 		}
@@ -47,23 +51,108 @@
 		.produto p {
 			font-size: 0.95em;
 			color: #555;
+			margin-bottom: 10px;
+		}
+
+		.produto .preco {
+			font-size: 1.1em;
+			color: #333;
+			font-weight: bold;
+			margin-top: 10px;
 		}
 
 		.produto .botao {
 			display: inline-block;
 			margin-top: 10px;
-			padding: 8px 16px;
-			background-color: #ff6600;
+			padding: 10px 20px;
+			background-color: #b27018;
 			color: #fff;
 			border: none;
 			border-radius: 5px;
 			text-decoration: none;
 			font-weight: bold;
 			transition: background-color 0.3s;
+			text-align: center;
+			width: 100%;
 		}
 
 		.produto .botao:hover {
-			background-color: #e65c00;
+			background-color: #b27018;
+		}
+
+		.botao {
+			display: inline-block;
+			text-align: center;
+			font-size: 1em;
+			padding: 10px 20px;
+			background-color: #b27018;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			transition: background-color 0.3s;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.botao:hover {
+			background-color: #b27018;
+		}
+
+		.h2produtos {
+			display: inline-block;
+			background-color: black;
+			color: white;
+			border: 2px solid white;
+			padding: 10px 20px;
+			border-radius: 8px;
+			margin: 40px auto 20px;
+			font-size: 1.8em;
+		}
+
+		.sectionprodutos {
+			padding: 40px 0;
+			text-align: center;
+		}
+
+		#carrinho-container {
+			max-width: 600px;
+			margin: 30px auto;
+			background: #fff;
+			border: 2px solid #b27018;
+			border-radius: 10px;
+			padding: 20px;
+			box-shadow: 0 0 10px rgba(255, 102, 0, 0.2);
+		}
+
+		#lista-carrinho li {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+
+		.remover-item {
+			background-color: #e60000;
+			color: white;
+			border: none;
+			padding: 5px 10px;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+
+		@media (max-width: 768px) {
+			main {
+				flex-direction: column;
+				align-items: center;
+			}
+
+			section {
+				width: 90%;
+			}
+
+			#carrinho {
+				width: 90%;
+			}
 		}
 	</style>
 
@@ -83,12 +172,9 @@
 					<li>
 						<a href="agendamentos.html">Agendamentos</a>
 						<ul>
-							<li class="current"><a href="index.html">Início</a></li>
-							<li><a href="agendamentos.html">Agendamentos</a></li>
 							<li><a href="produtos.html">Produtos</a></li>
 							<li><a href="servicos.html">Serviços</a></li>
 							<li><a href="contato.html">Contato</a></li>
-							<li><a href="sobre.html">Sobre</a></li>
 						</ul>
 					</li>
 					<li class="current"><a href="produtos.html">Produtos</a></li>
@@ -133,196 +219,324 @@
 						</section>
 					</div>
 
-					<section id="main">
-						<header class="major">
-							<h2 align="center" id="produtos">🐶 Para Cães</h2>
-						</header>
-						<div class=" produtos">
-							<div class="produto">
-								<img src="https://cobasi.vteximg.com.br/arquivos/ids/939252/racao-golden-special-para-caes-adultos-frango-e-carne-3310549-15kg-Frente.jpg?v=638757374687300000" alt="Golden Special Cães">
-								<h3>Golden Special</h3>
-								<p>Ração sabor frango e arroz para cães adultos. Alta digestibilidade.</p>
-							</div>
-							<div class="produto">
-								<img src="https://petshopamarosbichos.fbitsstatic.net/img/p/racao-premier-racas-especificas-spitz-alemao-para-caes-adultos-71853/259161-2.jpg?w=420&h=420&v=no-change&qs=ignore" alt="Premier Pet Raças Específicas">
-								<h3>Premier Raças Específicas</h3>
-								<p>Formulação ideal para cada raça. Mais saúde e vitalidade.</p>
-							</div>
-							<div class="produto">
-								<img src="https://m.media-amazon.com/images/I/511x4A38H1L._AC_UF1000,1000_QL80_.jpg" alt="Royal Canin Cães">
-								<h3>Royal Canin</h3>
-								<p>Rações específicas por porte, idade e necessidades especiais.</p>
-							</div>
-							<div class="produto">
-								<img src="https://m.media-amazon.com/images/I/61eO9IXO-XL._AC_UF1000,1000_QL80_.jpg" alt="Guabi Natural Cães">
-								<h3>Guabi Natural</h3>
-								<p>Sem corantes ou transgênicos. Com ingredientes naturais.</p>
-							</div>
-							<div class="produto">
-								<img src="https://www.petlove.com.br/images/products/230249/product/Ra%C3%A7%C3%A3o_Seca_Nestl%C3%A9_Purina_Pro_Plan_Frango_C%C3%A3es_Adultos_Ra%C3%A7as_M%C3%A9dias_3105259_15.jpg?1627734333" alt="Pro Plan Cães">
-								<h3>Pro Plan</h3>
-								<p>Rica em probióticos e proteínas de alta qualidade.</p>
-							</div>
+					<div class="col-8 col-12-medium imp-medium">
+						<!-- Conteúdo Principal -->
+						<article class="box post">
+							<a class="image featured"><img src="https://nfpet.com.br/blog/wp-content/uploads/2018/09/21-09-750x410.png" alt="Loja de produtos pet" /></a>
+							<header>
+								<h2>Conheça nossos produtos</h2>
+								<p>Qualidade e cuidado para seu melhor amigo</p>
+							</header>
+							<p>
+								No Pet Shop Feliz, você encontra uma grande variedade de produtos de alta qualidade para o seu pet. Trabalhamos com as melhores marcas de rações, petiscos, brinquedos, produtos de higiene e muito mais.
+							</p>
+							<p>
+								Nossa missão é proporcionar saúde, bem-estar e alegria para os animais e seus tutores. Com atendimento especializado e carinho em cada detalhe, garantimos uma experiência completa de compras.
+							</p>
+
+							<section>
+								<header>
+									<h3>Produtos em destaque</h3>
+								</header>
+								<p>
+									✔ Rações para todas as idades e raças<br>
+									✔ Petiscos naturais e saudáveis<br>
+									✔ Shampoo e colônias com fórmulas suaves<br>
+									✔ Acessórios estilosos e confortáveis<br>
+									✔ Brinquedos educativos e duráveis
+								</p>
+							</section>
+
+							<section>
+								<header>
+									<h3>Promoções especiais</h3>
+								</header>
+								<p>
+									Toda semana temos promoções exclusivas em rações e acessórios. Fique de olho em nosso site e redes sociais para aproveitar!
+								</p>
+							</section>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="main" class="sectionprodutos">
+			<h2 align="center" class="h2produtos" id="detalhes">🐶 Para Cães</h2>
+			<div class="produtos">
+				<div class="produto">
+					<img src="https://cobasi.vteximg.com.br/arquivos/ids/939252/racao-golden-special-para-caes-adultos-frango-e-carne-3310549-15kg-Frente.jpg?v=638757374687300000" alt=" Cães">
+					<h3>Golden Special</h3>
+					<p><strong>Preço:</strong> R$ 126,00</p>
+
+					<button class="botao" onclick="adicionarAoCarrinho('Golden Special',126.00)">Comprar</button>
+
+				</div>
+				<div class="produto">
+					<img src="https://petshopamarosbichos.fbitsstatic.net/img/p/racao-premier-racas-especificas-spitz-alemao-para-caes-adultos-71853/259161-2.jpg?w=420&h=420&v=no-change&qs=ignore" alt="Premier Pet Raças Específicas">
+					<h3>Premier Raças Específicas</h3>
+					<p><strong>Preço:</strong> R$ 94,81</p>
+
+					<button class="botao" onclick="adicionarAoCarrinho('Premier Raças Específicas',94.81)">Comprar</button>
+
+				</div>
+				<div class="produto">
+					<img src="https://m.media-amazon.com/images/I/511x4A38H1L._AC_UF1000,1000_QL80_.jpg" alt="Royal Canin Cães">
+					<h3>Royal Canin</h3>
+					<p><strong>Preço:</strong> R$ 135,92</p>
+
+					<button class="botao" onclick="adicionarAoCarrinho('Royal Canin',135.92)">Comprar</button>
+
+				</div>
+				<div class="produto">
+					<img src="https://m.media-amazon.com/images/I/519zCPugIvL.jpg" alt="Guabi Natural Cães">
+					<h3>Guabi Natural</h3>
+					<p><strong>Preço:</strong> R$ 256,90</p>
+
+					<button class="botao" onclick="adicionarAoCarrinho('Guabi Natural',256.90)">Comprar</button>
+
+				</div>
+				<div class="produto">
+					<img src="https://www.petlove.com.br/images/products/230249/product/Ra%C3%A7%C3%A3o_Seca_Nestl%C3%A9_Purina_Pro_Plan_Frango_C%C3%A3es_Adultos_Ra%C3%A7as_M%C3%A9dias_3105259_15.jpg?1627734333" alt="Pro Plan Cães">
+					<h3>Pro Plan</h3>
+					<p><strong>Preço:</strong> R$ 226,72</p>
+
+					<button class="botao" onclick="adicionarAoCarrinho('Pro Plan',226.72)">Comprar</button>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="main" class="sectionprodutos">
+			<h2 align="center" class="h2produtos">🐱 Para Gatos</h2>
+			<div class="produtos">
+				<div class="produto">
+					<img src="https://cobasi.vteximg.com.br/arquivos/ids/316962/Gato-Adulto-Castrado.jpg?v=638127719556300000" alt="Royal Canin Gatos">
+					<h3>Royal Canin</h3>
+					<p><strong>Preço:</strong> R$ 379,90</p>
+
+					<button class="botao" onclick="adicionarAoCarrinho('Royal Canin',379.90)">Comprar</button>
+
+				</div>
+				<div class="produto">
+					<img src="https://cobasi.vteximg.com.br/arquivos/ids/1043119/Racao-Premier-Gatos-Castrados-7-a-11-Anos-Ambientes-Internos-Frango-7.5kg-frente.png?v=638137343197230000" alt="Premier Gato Castrado">
+					<h3>Premier Gato Castrado</h3>
+					<p><strong>Preço:</strong> R$ 86,5</p>
+
+					<button class="botao" onclick="adicionarAoCarrinho('Premier Gato Castrado',86.5)">Comprar</button>
+
+				</div>
+				<div class="produto">
+					<img src="https://cobasi.vteximg.com.br/arquivos/ids/818262/racao-golden-gatos-adultos-sabor-carne-1kg.jpg?v=638127777113830000" alt="Golden Gatos">
+					<h3>Golden Gatos</h3>
+					<p><strong>Preço:</strong> R$ 31,50</p>
+
+					<button class="botao" onclick="adicionarAoCarrinho('Golden Gatos',31.50)">Comprar</button>
+
+				</div>
+				<div class="produto">
+					<img src="https://io.convertiez.com.br/m/agropetmineiro/shop/products/images/890/medium/racao-seca-gran-plus-gourmet-caes-adultos-mini-ovelha-e-arroz-1kg_1917.png" alt="GranPlus Gourmet Gatos">
+					<h3>GranPlus Gourmet</h3>
+					<p><strong>Preço:</strong> R$ 192,90</p>
+
+					<button class="botao" onclick="adicionarAoCarrinho('GranPlus Gourmet',192.90)">Comprar</button>
+
+				</div>
+				<div class="produto">
+					<img src="https://www.reidosanimais.com.br/media/catalog/product/cache/1/image/380x350/9df78eab33525d08d6e5fb8d27136e95/g/a/gato_adulto_frenre_pro_plan_2.png" alt="Pro Plan Gatos">
+					<h3>Pro Plan</h3>
+					<p><strong>Preço:</strong> R$ 296,99</p>
+
+					<button class="botao" onclick="adicionarAoCarrinho('Pro Plan',296.99)">Comprar</button>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="main" class="sectionprodutos">
+			<h2 align="center" id="acessorio" class="h2produtos">🎁 Acessórios e Brinquedos</h2>
+			<div class="produtos">
+				<div class="produto">
+					<img src="https://a-static.mlcdn.com.br/800x560/coleira-para-cachorro-ajustavel-rosa-unica-mix/unicamixcombr/cn108ros-m/2d5baf7fc173c87592c1a183d14feb93.jpeg" alt="Coleira para cães">
+					<h3>Coleira Ajustável</h3>
+					<p><strong>Preço:</strong> R$ 16,14</p>
+
+					<button class="botao" onclick="adicionarAoCarrinho('Coleira Ajustavel',16.14)">Comprar</button>
+
+				</div>
+				<div class="produto">
+					<img src="https://images.tcdn.com.br/img/img_prod/470728/brinquedo_mordedor_ratinho_real_com_apito_para_gatos_13125_2_8e8ed937c976d301b6ce11f30309e52d.jpg" alt="Brinquedo mordedor">
+					<h3>Brinquedo Mordedor</h3>
+					<p><strong>Preço:</strong> R$ 32,18</p>
+
+					<button class="botao" onclick="adicionarAoCarrinho('Brinquedo Mordedor',32.18)">Comprar</button>
+
+				</div>
+				<div class="produto">
+					<img src="https://cdn.leroymerlin.com.br/products/cama_pet_retangular_resistente_caminha_estofada_almofada_remo_1571640361_f78b_600x600.jpg" alt="Caminha pet">
+					<h3>Caminha Estofada</h3>
+					<p><strong>Preço:</strong> R$ 163,66</p>
+
+					<button class="botao" onclick="adicionarAoCarrinho('Caminha Estofada',163.66)">Comprar</button>
+
+				</div>
+				<div class="produto">
+					<img src="https://plasvale.cdn.magazord.com.br/img/2023/07/produto/94/comedouro-duplo-removivel-199-variacao-37-1-20201130131844.jpeg?ims=fit-in/600x600/filters:fill(white)" alt="Comedouro">
+					<h3>Comedouro Duplo</h3>
+					<p><strong>Preço:</strong> R$ 78,90</p>
+					<button class="botao" onclick="adicionarAoCarrinho('Comedouro Duplo', 78.90)">Comprar</button>
+
+				</div>
+			</div>
+		</section>
+		<section id="main">
+			<div id="carrinho-container" style="background:#fffbe6; border-bottom:2px solid #ff6600; padding:15px; position:sticky; top:0; z-index:999;">
+				<h3>Carrinho de Compras 🛒</h3>
+				<ul id="lista-carrinho"></ul>
+				<p><strong>Total:</strong> R$ <span id="total-carrinho">0.00</span></p>
+				<p>Mande o total no nosso WhatsApp, e qual o meio de pagamento!</p>
+				<p>(11) 99999-9999</p>
+			</div>
+		</section>
+
+		<!-- Rodapé -->
+		<section id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-8 col-12-medium">
+						<section>
+							<header>
+								<h2>Dicas para cuidar do seu pet</h2>
+							</header>
+							<ul class="dates">
+								<li>
+									<span class="date">Mai <strong>10</strong></span>
+									<h3><a href="#">Como escolher a ração ideal</a></h3>
+									<p>Veja dicas de especialistas para garantir a nutrição certa para seu pet.</p>
+								</li>
+								<li>
+									<span class="date">Abr <strong>28</strong></span>
+									<h3><a href="#">Brinquedos que estimulam o pet</a></h3>
+									<p>Conheça os brinquedos que ajudam no desenvolvimento físico e mental.</p>
+								</li>
+							</ul>
+						</section>
+					</div>
+					<div class="col-4 col-12-medium">
+						<section>
+							<header>
+								<h2>Sobre nós</h2>
+							</header>
+							<a href="#" class="image featured"><img src="images/logo-pet.jpg" alt="" /></a>
+							<p>
+								O Pet Shop Feliz é um espaço feito com amor para você e seu melhor amigo. Trabalhamos com produtos de qualidade e atendimento com carinho.
+							</p>
+							<footer>
+								<ul class="actions">
+									<li><a href="contato.html" class="button">Fale conosco</a></li>
+								</ul>
+							</footer>
+						</section>
+					</div>
+					<div class="col-4 col-6-medium col-12-small">
+						<section>
+							<header>
+								<h2>Categorias populares</h2>
+							</header>
+							<ul class="divided">
+								<li><a href="#">Rações</a></li>
+								<li><a href="#">Petiscos</a></li>
+								<li><a href="#">Brinquedos</a></li>
+								<li><a href="#">Higiene</a></li>
+								<li><a href="#">Acessórios</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="col-4 col-12-medium">
+						<section>
+							<header>
+								<h2>Redes sociais</h2>
+							</header>
+							<ul class="social">
+								<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
+								<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+								<li><a class="icon brands fa-whatsapp" href="#"><span class="label">WhatsApp</span></a></li>
+							</ul>
+							<ul class="contact">
+								<li>
+									<h3>Endereço</h3>
+									<p>
+										Rua dos Pets, 123<br />
+										Bairro Felicidade<br />
+										São Paulo - SP
+									</p>
+								</li>
+								<li>
+									<h3>Email</h3>
+									<p><a href="mailto:contato@petshopfeliz.com">contato@petshopfeliz.com</a></p>
+								</li>
+								<li>
+									<h3>Telefone</h3>
+									<p>(11) 99999-9999</p>
+								</li>
+							</ul>
+						</section>
+					</div>
+
+					<div class="col-12">
+						<div id="copyright">
+							<ul class="links">
+								<li>&copy; Pet Shop Feliz. Todos os direitos reservados.</li>
+								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
 						</div>
-					</section>
+					</div>
+				</div>
+			</div>
+		</section>
 
-					<section id="main">
-						<header class="major">
-							<h2 align="center">🐱 Para Gatos</h2>
-						</header>
-						<div class="produtos">
-							<div class="produto">
-								<img src="https://static-shop.vivapets.com/media/catalog/product/cache/11fc96e7318a291175a0004e054be56e/h/a/hairskin-ne-fcn-packshot.jpg" alt="Royal Canin Gatos">
-								<h3>Royal Canin</h3>
-								<p>Fórmulas para gatos castrados, peludos ou com sensibilidades.</p>
-							</div>
-							<div class="produto">
-								<img src="https://cdn3.ecshop.com.br/hxwhdliq/product_images/m/239/prem-gatos-castr-7-a-11-frango-500-g__92127.png" alt="Premier Gato Castrado">
-								<h3>Premier Gato Castrado</h3>
-								<p>Ajuda no controle do peso e na saúde urinária.</p>
-							</div>
-							<div class="produto">
-								<img src="images/golden-gato.jpg" alt="Golden Gatos">
-								<h3>Golden Gatos</h3>
-								<p>Ração saborosa e equilibrada para gatos adultos.</p>
-							</div>
-							<div class="produto">
-								<img src="images/granplus-gato.jpg" alt="GranPlus Gourmet Gatos">
-								<h3>GranPlus Gourmet</h3>
-								<p>Com taurina, essencial para saúde dos olhos e coração dos felinos.</p>
-							</div>
-							<div class="produto">
-								<img src="images/proplan-gato.jpg" alt="Pro Plan Gatos">
-								<h3>Pro Plan</h3>
-								<p>Imunidade reforçada e nutrientes de alto desempenho.</p>
-							</div>
-						</div>
-					</section>
+	</div>
 
-					<section id="main">
-						<header class="major">
-							<h2 align="center" id="acessorio">🎁 Acessórios e Brinquedos</h2>
-						</header>
-						<div class="produtos">
-							<div class="produto">
-								<img src="https://cdn.petz.com.br/fotos/1687968972470.jpg" alt="Coleira para cães">
-								<h3>Coleira Ajustável</h3>
-								<p>Conforto e segurança para o seu pet em todos os passeios.</p>
-							</div>
-							<div class="produto">
-								<img src="https://cdn.petz.com.br/fotos/1660684937875.jpg" alt="Brinquedo mordedor">
-								<h3>Brinquedo Mordedor</h3>
-								<p>Ajuda a manter a saúde bucal e reduz o estresse do pet.</p>
-							</div>
-							<div class="produto">
-								<img src="https://img.elo7.com.br/product/zoom/271D6CE/caminha-pet-cachorro-ou-gato-tamanho-m-cama-pet.jpg" alt="Caminha pet">
-								<h3>Caminha Estofada</h3>
-								<p>Super macia, ideal para o descanso dos pets pequenos e médios.</p>
-							</div>
-							<div class="produto">
-								<img src="https://cdn.petz.com.br/fotos/1632493008771.jpg" alt="Comedouro">
-								<h3>Comedouro Duplo</h3>
-								<p>Prático e higiênico, ideal para ração e água no mesmo suporte.</p>
-							</div>
-						</div>
-					</section>
+	<!-- Scripts -->
+	<script>
 
-					<!-- Rodapé -->
-					<section id="footer">
-						<div class="container">
-							<div class="row">
-								<div class="col-8 col-12-medium">
-									<section>
-										<header>
-											<h2>Dicas para cuidar do seu pet</h2>
-										</header>
-										<ul class="dates">
-											<li>
-												<span class="date">Mai <strong>10</strong></span>
-												<h3><a href="#">Como escolher a ração ideal</a></h3>
-												<p>Veja dicas de especialistas para garantir a nutrição certa para seu pet.</p>
-											</li>
-											<li>
-												<span class="date">Abr <strong>28</strong></span>
-												<h3><a href="#">Brinquedos que estimulam o pet</a></h3>
-												<p>Conheça os brinquedos que ajudam no desenvolvimento físico e mental.</p>
-											</li>
-										</ul>
-									</section>
-								</div>
-								<div class="col-4 col-12-medium">
-									<section>
-										<header>
-											<h2>Sobre nós</h2>
-										</header>
-										<a href="#" class="image featured"><img src="images/logo-pet.jpg" alt="" /></a>
-										<p>
-											O Pet Shop Feliz é um espaço feito com amor para você e seu melhor amigo. Trabalhamos com produtos de qualidade e atendimento com carinho.
-										</p>
-										<footer>
-											<ul class="actions">
-												<li><a href="contato.html" class="button">Fale conosco</a></li>
-											</ul>
-										</footer>
-									</section>
-								</div>
-								<div class="col-4 col-6-medium col-12-small">
-									<section>
-										<header>
-											<h2>Categorias populares</h2>
-										</header>
-										<ul class="divided">
-											<li><a href="#">Rações</a></li>
-											<li><a href="#">Petiscos</a></li>
-											<li><a href="#">Brinquedos</a></li>
-											<li><a href="#">Higiene</a></li>
-											<li><a href="#">Acessórios</a></li>
-										</ul>
-									</section>
-								</div>
-								<div class="col-4 col-12-medium">
-									<section>
-										<header>
-											<h2>Redes sociais</h2>
-										</header>
-										<ul class="social">
-											<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
-											<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
-											<li><a class="icon brands fa-whatsapp" href="#"><span class="label">WhatsApp</span></a></li>
-										</ul>
-										<ul class="contact">
-											<li>
-												<h3>Endereço</h3>
-												<p>
-													Rua dos Pets, 123<br />
-													Bairro Felicidade<br />
-													São Paulo - SP
-												</p>
-											</li>
-											<li>
-												<h3>Email</h3>
-												<p><a href="mailto:contato@petshopfeliz.com">contato@petshopfeliz.com</a></p>
-											</li>
-											<li>
-												<h3>Telefone</h3>
-												<p>(11) 99999-9999</p>
-											</li>
-										</ul>
-									</section>
-								</div>
+		let carrinho = [];
 
-								<div class="col-12">
-									<div id="copyright">
-										<ul class="links">
-											<li>&copy; Pet Shop Feliz. Todos os direitos reservados.</li>
-											<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-					</section>
+		function atualizarCarrinho() {
+			const lista = document.getElementById('lista-carrinho');
+			const totalSpan = document.getElementById('total-carrinho');
+			lista.innerHTML = '';
+			let total = 0;
 
-					<!-- Scripts -->
-					<script src="assets/js/jquery.min.js"></script>
-					<script src="assets/js/jquery.dropotron.min.js"></script>
+			carrinho.forEach((item, index) => {
+				total += item.preco;
+				const li = document.createElement('li');
+				li.innerHTML = `
+            ${item.nome} - R$ ${item.preco.toFixed(2)}
+            <button class="remover-item" onclick="removerDoCarrinho(${index})">Remover</button>
+        `;
+				lista.appendChild(li);
+			});
+
+			totalSpan.textContent = total.toFixed(2);
+		}
+
+		function adicionarAoCarrinho(nome, preco) {
+			carrinho.push({ nome, preco });
+			atualizarCarrinho();
+		}
+
+		function removerDoCarrinho(index) {
+			carrinho.splice(index, 1);
+			atualizarCarrinho();
+		}
+	</script>
+
+
+
+	<script src="assets/js/jquery.min.js"></script>
+
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+</body>
+
+</html>
