@@ -1,36 +1,90 @@
 <!DOCTYPE HTML>
-<!--
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
-	<title>Dopetrope by HTML5 UP</title>
+	<title>Pet Shop Feliz</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+	    .produtos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .produto {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        width: 280px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.2s;
+    }
+
+    .produto:hover {
+        transform: translateY(-5px);
+    }
+
+    .produto img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .produto h3 {
+        color: #ff6600;
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    .produto p {
+        font-size: 0.95em;
+        color: #555;
+    }
+
+    .produto .botao {
+        display: inline-block;
+        margin-top: 10px;
+        padding: 8px 16px;
+        background-color: #ff6600;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .produto .botao:hover {
+        background-color: #e65c00;
+    }
+</style>
+
 </head>
 
 <body class="left-sidebar is-preload">
 	<div id="page-wrapper">
 
-		<!-- Header -->
+		<!-- Cabeçalho -->
 		<section id="header">
-
-			<!-- Logo -->
 			<h1><a href="index.html">Pet Shop Feliz</a></h1>
 
-			<!-- Nav -->
+			<!-- Navegação -->
 			<nav id="nav">
 				<ul>
-					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html">Início</a></li>
 					<li>
 						<a href="agendamentos.html">Agendamentos</a>
 						<ul>
 							<li><a href="produtos.html">Produtos</a></li>
 							<li><a href="servicos.html">Serviços</a></li>
+<<<<<<< HEAD
 							<li><a href="contato">Contato</a></li>
 							<li><a href="sobre.html">Sobre</a></li>
 							<li>
@@ -44,145 +98,204 @@
 								</ul>
 							</li>
 							<li><a href="#">Veroeros feugiat</a></li>
+=======
+							<li><a href="contato.html">Contato</a></li>
+>>>>>>> produtos
 						</ul>
 					</li>
-					<li class="current">
-					<li><a href="produtos.html">Produtos</a></li>
+					<li class="current"><a href="produtos.html">Produtos</a></li>
 					<li><a href="servicos.html">Serviços</a></li>
-					<li><a href="contato">Contato</a></li>
+					<li><a href="contato.html">Contato</a></li>
 				</ul>
 			</nav>
-
 		</section>
 
-		<!-- Main -->
+		<!-- Principal -->
 		<section id="main">
 			<div class="container">
 				<div class="row">
 					<div class="col-4 col-12-medium">
 
-						<!-- Sidebar -->
+						<!-- Lateral -->
 						<section class="box">
-							<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>
+							<a class="image featured"><img src="https://espacopetshop.com.br/wp-content/uploads/2020/02/cachorro-comendo-ra%C3%A7%C3%A3o.jpg" alt="Ração para cães" /></a>
 							<header>
-								<h3>Sed etiam lorem nulla</h3>
+								<h3>Ração Premium</h3>
 							</header>
-							<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+							<p>Rações nutritivas e saborosas para cães e gatos de todas as idades. Garantia de saúde e bem-estar para seu pet.</p>
 							<footer>
-								<a href="#" class="button alt">Magna sed taciti</a>
+								<a href="#produtos" class="button alt">Ver detalhes</a>
 							</footer>
 						</section>
+
 						<section class="box">
 							<header>
-								<h3>Feugiat consequat</h3>
+								<h3>Acessórios e Brinquedos</h3>
 							</header>
-							<p>Veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat sed lorem consequat feugiat lorem dolore.</p>
+							<p>Encontre coleiras, brinquedos interativos, camas e muito mais para deixar seu pet feliz e confortável.</p>
 							<ul class="divided">
-								<li><a href="#">Sed et blandit consequat sed</a></li>
-								<li><a href="#">Hendrerit tortor vitae sapien dolore</a></li>
-								<li><a href="#">Sapien id suscipit magna sed felis</a></li>
-								<li><a href="#">Aptent taciti sociosqu ad litora</a></li>
+								<li><a href="#acessorio">Coleiras e peitorais</a></li>
+								<li><a href="#acessorio">Brinquedos resistentes</a></li>
+								<li><a href="#acessorio">Caminhas e casinhas</a></li>
+								<li><a href="#acessorio">Bebedouros e comedouros</a></li>
 							</ul>
 							<footer>
-								<a href="#" class="button alt">Ipsum consequat</a>
+								<a href="#" class="button alt">Comprar agora</a>
 							</footer>
 						</section>
-
 					</div>
-					<div class="col-8 col-12-medium imp-medium">
 
-						<!-- Content -->
+					<div class="col-8 col-12-medium imp-medium">
+						<!-- Conteúdo Principal -->
 						<article class="box post">
-							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+							<a class="image featured"><img src="https://nfpet.com.br/blog/wp-content/uploads/2018/09/21-09-750x410.png" alt="Loja de produtos pet" /></a>
 							<header>
-								<h2>Left Sidebar</h2>
-								<p>Lorem ipsum dolor sit amet feugiat</p>
+								<h2>Conheça nossos produtos</h2>
+								<p>Qualidade e cuidado para seu melhor amigo</p>
 							</header>
 							<p>
-								Vestibulum scelerisque ultricies libero id hendrerit. Vivamus malesuada quam faucibus ante dignissim auctor
-								hendrerit libero placerat. Nulla facilisi. Proin aliquam felis non arcu molestie at accumsan turpis commodo.
-								Proin elementum, nibh non egestas sodales, augue quam aliquet est, id egestas diam justo adipiscing ante.
-								Pellentesque tempus nulla non urna eleifend ut ultrices nisi faucibus.
+								No Pet Shop Feliz, você encontra uma grande variedade de produtos de alta qualidade para o seu pet. Trabalhamos com as melhores marcas de rações, petiscos, brinquedos, produtos de higiene e muito mais.
 							</p>
 							<p>
-								Praesent a dolor leo. Duis in felis in tortor lobortis volutpat et pretium tellus. Vestibulum ac ante nisl,
-								a elementum odio. Duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-								placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-								eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-								elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-								sit amet nullam consequat feugiat dolore tempus.
+								Nossa missão é proporcionar saúde, bem-estar e alegria para os animais e seus tutores. Com atendimento especializado e carinho em cada detalhe, garantimos uma experiência completa de compras.
 							</p>
+
 							<section>
 								<header>
-									<h3>Something else</h3>
+									<h3>Produtos em destaque</h3>
 								</header>
 								<p>
-									Elementum odio duis semper risus et lectus commodo fringilla. Maecenas sagittis convallis justo vel mattis.
-									placerat, nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-									eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-									elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-									sit amet nullam consequat feugiat dolore tempus.
-								</p>
-								<p>
-									Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-									eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-									elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-									sit amet nullam consequat feugiat dolore tempus.
+									✔ Rações para todas as idades e raças<br>
+									✔ Petiscos naturais e saudáveis<br>
+									✔ Shampoo e colônias com fórmulas suaves<br>
+									✔ Acessórios estilosos e confortáveis<br>
+									✔ Brinquedos educativos e duráveis
 								</p>
 							</section>
+
 							<section>
 								<header>
-									<h3>So in conclusion ...</h3>
+									<h3>Promoções especiais</h3>
 								</header>
 								<p>
-									Nunc diam iaculis massa, et aliquet nibh leo non nisl vitae porta lobortis, enim neque fringilla nunc,
-									eget faucibus lacus sem quis nunc suspendisse nec lectus sit amet augue rutrum vulputate ut ut mi. Aenean
-									elementum, mi sit amet porttitor lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-									sit amet nullam consequat feugiat dolore tempus. Elementum odio duis semper risus et lectus commodo fringilla.
-									Maecenas sagittis convallis justo vel mattis.
+									Toda semana temos promoções exclusivas em rações e acessórios. Fique de olho em nosso site e redes sociais para aproveitar!
 								</p>
 							</section>
 						</article>
-
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<!-- Footer -->
+<section id ="main">
+    <h2 align="center"  id="produtos">🐶 Para Cães</h2>
+    <div class="produtos" >
+        <div class="produto">
+            <img src="https://cobasi.vteximg.com.br/arquivos/ids/939252/racao-golden-special-para-caes-adultos-frango-e-carne-3310549-15kg-Frente.jpg?v=638757374687300000" alt="Golden Special Cães">
+            <h3>Golden Special</h3>
+            <p>Ração sabor frango e arroz para cães adultos. Alta digestibilidade.</p>
+        </div>
+        <div class="produto">
+            <img src="https://petshopamarosbichos.fbitsstatic.net/img/p/racao-premier-racas-especificas-spitz-alemao-para-caes-adultos-71853/259161-2.jpg?w=420&h=420&v=no-change&qs=ignore" alt="Premier Pet Raças Específicas">
+            <h3>Premier Raças Específicas</h3>
+            <p>Formulação ideal para cada raça. Mais saúde e vitalidade.</p>
+        </div>
+        <div class="produto">
+            <img src="https://m.media-amazon.com/images/I/511x4A38H1L._AC_UF1000,1000_QL80_.jpg" alt="Royal Canin Cães">
+            <h3>Royal Canin</h3>
+            <p>Rações específicas por porte, idade e necessidades especiais.</p>
+        </div>
+        <div class="produto">
+            <img src="https://m.media-amazon.com/images/I/61eO9IXO-XL._AC_UF1000,1000_QL80_.jpg" alt="Guabi Natural Cães">
+            <h3>Guabi Natural</h3>
+            <p>Sem corantes ou transgênicos. Com ingredientes naturais.</p>
+        </div>
+        <div class="produto">
+            <img src="https://www.petlove.com.br/images/products/230249/product/Ra%C3%A7%C3%A3o_Seca_Nestl%C3%A9_Purina_Pro_Plan_Frango_C%C3%A3es_Adultos_Ra%C3%A7as_M%C3%A9dias_3105259_15.jpg?1627734333" alt="Pro Plan Cães">
+            <h3>Pro Plan</h3>
+            <p>Rica em probióticos e proteínas de alta qualidade.</p>
+        </div>
+    </div>
+</section>
+
+<section id="main">
+    <h2 align="center">🐱 Para Gatos</h2>
+    <div class="produtos">
+        <div class="produto">
+            <img src="https://static-shop.vivapets.com/media/catalog/product/cache/11fc96e7318a291175a0004e054be56e/h/a/hairskin-ne-fcn-packshot.jpg" alt="Royal Canin Gatos">
+            <h3>Royal Canin</h3>
+            <p>Fórmulas para gatos castrados, peludos ou com sensibilidades.</p>
+        </div>
+        <div class="produto">
+            <img src="https://cdn3.ecshop.com.br/hxwhdliq/product_images/m/239/prem-gatos-castr-7-a-11-frango-500-g__92127.png" alt="Premier Gato Castrado">
+            <h3>Premier Gato Castrado</h3>
+            <p>Ajuda no controle do peso e na saúde urinária.</p>
+        </div>
+        <div class="produto">
+            <img src="images/golden-gato.jpg" alt="Golden Gatos">
+            <h3>Golden Gatos</h3>
+            <p>Ração saborosa e equilibrada para gatos adultos.</p>
+        </div>
+        <div class="produto">
+            <img src="images/granplus-gato.jpg" alt="GranPlus Gourmet Gatos">
+            <h3>GranPlus Gourmet</h3>
+            <p>Com taurina, essencial para saúde dos olhos e coração dos felinos.</p>
+        </div>
+        <div class="produto">
+            <img src="images/proplan-gato.jpg" alt="Pro Plan Gatos">
+            <h3>Pro Plan</h3>
+            <p>Imunidade reforçada e nutrientes de alto desempenho.</p>
+        </div>
+    </div>
+</section>
+
+<section id="main">
+    <h2 align="center" id="acessorio">🎁 Acessórios e Brinquedos</h2>
+    <div class="produtos">
+        <div class="produto">
+            <img src="https://cdn.petz.com.br/fotos/1687968972470.jpg" alt="Coleira para cães">
+            <h3 >Coleira Ajustável</h3>
+            <p>Conforto e segurança para o seu pet em todos os passeios.</p>
+        </div>
+        <div class="produto">
+            <img src="https://cdn.petz.com.br/fotos/1660684937875.jpg" alt="Brinquedo mordedor">
+            <h3 >Brinquedo Mordedor</h3>
+            <p>Ajuda a manter a saúde bucal e reduz o estresse do pet.</p>
+        </div>
+        <div class="produto">
+            <img src="https://img.elo7.com.br/product/zoom/271D6CE/caminha-pet-cachorro-ou-gato-tamanho-m-cama-pet.jpg" alt="Caminha pet">
+            <h3>Caminha Estofada</h3>
+            <p>Super macia, ideal para o descanso dos pets pequenos e médios.</p>
+        </div>
+        <div class="produto">
+            <img src="https://cdn.petz.com.br/fotos/1632493008771.jpg" alt="Comedouro">
+            <h3>Comedouro Duplo</h3>
+            <p>Prático e higiênico, ideal para ração e água no mesmo suporte.</p>
+        </div>
+    </div>
+</section>
+
+
+
+		<!-- Rodapé -->
 		<section id="footer">
 			<div class="container">
 				<div class="row">
 					<div class="col-8 col-12-medium">
 						<section>
 							<header>
-								<h2>Blandit nisl adipiscing</h2>
+								<h2>Dicas para cuidar do seu pet</h2>
 							</header>
 							<ul class="dates">
 								<li>
-									<span class="date">Jan <strong>27</strong></span>
-									<h3><a href="#">Lorem dolor sit amet veroeros</a></h3>
-									<p>Ipsum dolor sit amet veroeros consequat blandit ipsum phasellus lorem consequat etiam.</p>
+									<span class="date">Mai <strong>10</strong></span>
+									<h3><a href="#">Como escolher a ração ideal</a></h3>
+									<p>Veja dicas de especialistas para garantir a nutrição certa para seu pet.</p>
 								</li>
 								<li>
-									<span class="date">Jan <strong>23</strong></span>
-									<h3><a href="#">Ipsum sed blandit nisl consequat</a></h3>
-									<p>Blandit phasellus lorem ipsum dolor tempor sapien tortor hendrerit adipiscing feugiat lorem.</p>
-								</li>
-								<li>
-									<span class="date">Jan <strong>15</strong></span>
-									<h3><a href="#">Magna tempus lorem feugiat</a></h3>
-									<p>Dolore consequat sed phasellus lorem sed etiam nullam dolor etiam sed amet sit consequat.</p>
-								</li>
-								<li>
-									<span class="date">Jan <strong>12</strong></span>
-									<h3><a href="#">Dolore tempus ipsum feugiat nulla</a></h3>
-									<p>Feugiat lorem dolor sed nullam tempus lorem ipsum dolor sit amet nullam consequat.</p>
-								</li>
-								<li>
-									<span class="date">Jan <strong>10</strong></span>
-									<h3><a href="#">Blandit tempus aliquam?</a></h3>
-									<p>Feugiat sed tempus blandit tempus adipiscing nisl lorem ipsum dolor sit amet dolore.</p>
+									<span class="date">Abr <strong>28</strong></span>
+									<h3><a href="#">Brinquedos que estimulam o pet</a></h3>
+									<p>Conheça os brinquedos que ajudam no desenvolvimento físico e mental.</p>
 								</li>
 							</ul>
 						</section>
@@ -190,17 +303,15 @@
 					<div class="col-4 col-12-medium">
 						<section>
 							<header>
-								<h2>What's this all about?</h2>
+								<h2>Sobre nós</h2>
 							</header>
-							<a href="#" class="image featured"><img src="images/pic10.jpg" alt="" /></a>
+							<a href="#" class="image featured"><img src="images/logo-pet.jpg" alt="" /></a>
 							<p>
-								This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
-								<a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
-								the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
+								O Pet Shop Feliz é um espaço feito com amor para você e seu melhor amigo. Trabalhamos com produtos de qualidade e atendimento com carinho.
 							</p>
 							<footer>
 								<ul class="actions">
-									<li><a href="#" class="button">Find out more</a></li>
+									<li><a href="contato.html" class="button">Fale conosco</a></li>
 								</ul>
 							</footer>
 						</section>
@@ -208,75 +319,55 @@
 					<div class="col-4 col-6-medium col-12-small">
 						<section>
 							<header>
-								<h2>Tempus consequat</h2>
+								<h2>Categorias populares</h2>
 							</header>
 							<ul class="divided">
-								<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-								<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-								<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-								<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-								<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-								<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
-							</ul>
-						</section>
-					</div>
-					<div class="col-4 col-6-medium col-12-small">
-						<section>
-							<header>
-								<h2>Ipsum et phasellus</h2>
-							</header>
-							<ul class="divided">
-								<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-								<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-								<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-								<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-								<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-								<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+								<li><a href="#">Rações</a></li>
+								<li><a href="#">Petiscos</a></li>
+								<li><a href="#">Brinquedos</a></li>
+								<li><a href="#">Higiene</a></li>
+								<li><a href="#">Acessórios</a></li>
 							</ul>
 						</section>
 					</div>
 					<div class="col-4 col-12-medium">
 						<section>
 							<header>
-								<h2>Vitae tempor lorem</h2>
+								<h2>Redes sociais</h2>
 							</header>
 							<ul class="social">
 								<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
-								<li><a class="icon brands fa-twitter" href="#"><span class="label">Twitter</span></a></li>
-								<li><a class="icon brands fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
-								<li><a class="icon brands fa-tumblr" href="#"><span class="label">Tumblr</span></a></li>
-								<li><a class="icon brands fa-linkedin-in" href="#"><span class="label">LinkedIn</span></a></li>
+								<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
+								<li><a class="icon brands fa-whatsapp" href="#"><span class="label">WhatsApp</span></a></li>
 							</ul>
 							<ul class="contact">
 								<li>
-									<h3>Address</h3>
+									<h3>Endereço</h3>
 									<p>
-										Untitled Incorporated<br />
-										1234 Somewhere Road Suite<br />
-										Nashville, TN 00000-0000
+										Rua dos Pets, 123<br />
+										Bairro Felicidade<br />
+										São Paulo - SP
 									</p>
 								</li>
 								<li>
-									<h3>Mail</h3>
-									<p><a href="#">someone@untitled.tld</a></p>
+									<h3>Email</h3>
+									<p><a href="mailto:contato@petshopfeliz.com">contato@petshopfeliz.com</a></p>
 								</li>
 								<li>
-									<h3>Phone</h3>
-									<p>(800) 000-0000</p>
+									<h3>Telefone</h3>
+									<p>(11) 99999-9999</p>
 								</li>
 							</ul>
 						</section>
 					</div>
-					<div class="col-12">
 
-						<!-- Copyright -->
+					<div class="col-12">
 						<div id="copyright">
 							<ul class="links">
-								<li>&copy; Untitled. All rights reserved.</li>
+								<li>&copy; Pet Shop Feliz. Todos os direitos reservados.</li>
 								<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
-
 					</div>
 				</div>
 			</div>
@@ -287,11 +378,4 @@
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+	
