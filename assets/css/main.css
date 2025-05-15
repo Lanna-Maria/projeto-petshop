@@ -3057,10 +3057,70 @@ ul.social li a.fa-google-plus:hover {
     }
 }
 
+@media (max-width: 768px) {
+  .about {
+    margin: 1em 2em; /* Menos margem nas telas menores */
+    padding: 2em 2em; /* Menos padding em telas pequenas */
+  }
+
+  .galery {
+    gap: 10px; /* Menor espaçamento entre as imagens */
+  }
+
+  .galery figure {
+    width: 100%; /* As imagens ocupam 100% da largura da tela em dispositivos menores */
+  }
+
+  .galery img {
+    height: auto; /* A altura das imagens se ajusta automaticamente */
+  }
+}
+
+@media (max-width: 480px) {
+
+  .galery figure {
+    width: 100%;
+  }
+
+  .petshop {
+    width: 100%; /* A imagem da petshop ocupa toda a largura em telas pequenas */
+  }
+}
+
+/* Ajuste para tablets grandes */
+@media (max-width: 1024px) {
+  #h1 {
+    font-size: 3rem; /* Tamanho para tablets */
+  }
+}
+
+/* Ajuste para tablets pequenos e celulares grandes */
+@media (max-width: 768px) {
+  #h1 {
+    font-size: 28px; /* Tamanho para tablets pequenos e celulares grandes */
+  }
+}
+
+/* Ajuste para celulares menores */
+@media (max-width: 480px) {
+  #h1 {
+    font-size: 22px; /* Tamanho para celulares pequenos */
+  }
+}
+
+/* Ajuste para telas muito pequenas */
+@media (max-width: 320px) {
+  #h1 {
+    font-size: 18px; /* Tamanho para celulares muito pequenos */
+  }
+}
+
 .about {
   margin: 0.75em 5em 2.5em 5em;
   padding: 4em 5em 4em 5em;
   background-color: white;
+  border-radius: 0.75em;
+  color: black;
 }
 
 .petshop {
@@ -3074,8 +3134,8 @@ ul.social li a.fa-google-plus:hover {
 
 .galery {
   display: flex;
-  justify-content: center; /* centraliza as imagens no container */
-  gap: 20px; /* espaço entre as imagens */
+  justify-content: center;
+  gap: 20px;
   flex-wrap: wrap; /* permite quebrar para próxima linha em telas menores */
   margin-top: 20px;
 }
@@ -3090,4 +3150,48 @@ ul.social li a.fa-google-plus:hover {
   width: 100%;
   height: 20em;
   border-radius: 8px;
+  cursor: zoom-in;
+  transition: 0.2s;
 }
+
+.galery img:hover {
+  transform: scale(1.03);
+}
+
+figcaption {
+  padding: 0 0 2em;
+  font-size: 0.80em;
+}
+
+#h1 {
+  text-align: center;
+  font-size: 3rem; /* Tamanho padrão para telas grandes */
+  font-weight: bold;
+  padding: 1em 0;
+  margin: 0;
+}
+
+.img-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.img-modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 10px #000;
+  border-radius: 8px;
+}
+
+.img-modal.mostrar {
+  display: flex;
+}
+
+
