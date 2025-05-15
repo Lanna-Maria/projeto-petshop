@@ -33,121 +33,60 @@
 		</section>
 
 		<!-- Main -->
-		<section id="main">
+		<section id="" style="background-color: white;">
 			<div class="container">
 				<!-- Seção de Agendamentos -->
 				<section>
+					<br><br>
 					<header class="major">
-						<h2>Agendamentos</h2>
-						<p>Agende os serviços para seu pet</p>
+						<h2>Agendamento de Serviço</h2>
 					</header>
-					<div class="row">
-						<div class="col-6 col-12-medium">
-							<section class="box">
-								<h3>Novo Agendamento</h3>
-								<p>Marque banho, tosa ou consulta veterinária</p>
-								<footer>
-									<a href="agendar.html" class="button alt">Agendar Serviço</a>
-								</footer>
-							</section>
-						</div>
-						<div class="col-6 col-12-medium">
-							<section class="box">
-								<h3>Meus Agendamentos</h3>
-								<p>Visualize ou cancele agendamentos existentes</p>
-								<footer>
-									<a href="agendamentos.html" class="button alt">Ver Agendamentos</a>
-								</footer>
-							</section>
-						</div>
-					</div>
-				</section>
+					<div class=" ">
+						<center>
+							<form class="form">
+								<label for="nome">Nome do dono</label>
+								<input type="text" id="nome" name="nome" required />
 
-				<!-- Seção de Produtos -->
-				<section>
-					<header class="major">
-						<h2>Nossos Produtos</h2>
-						<p>Alimentação, acessórios e cuidados</p>
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box">
-								<a href="#" class="image featured"><img src="images/produto-racao.jpg" alt="Ração Premium" /></a>
-								<h3>Ração Premium</h3>
-								<p>Alimento balanceado para todas as raças</p>
-								<footer>
-									<a href="produtos.html" class="button alt">Ver Produtos</a>
-								</footer>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box">
-								<a href="#" class="image featured"><img src="images/produto-acessorios.jpg" alt="Acessórios" /></a>
-								<h3>Acessórios</h3>
-								<p>Coleiras, brinquedos e mais</p>
-								<footer>
-									<a href="produtos.html" class="button alt">Ver Produtos</a>
-								</footer>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box">
-								<a href="#" class="image featured"><img src="images/produto-higiene.jpg" alt="Higiene" /></a>
-								<h3>Higiene</h3>
-								<p>Shampoos, perfumes e cuidados</p>
-								<footer>
-									<a href="produtos.html" class="button alt">Ver Produtos</a>
-								</footer>
-							</section>
-						</div>
-					</div>
-				</section>
+								<label for="telefone">Telefone de contato</label>
+								<input type="tel" id="telefone" name="telefone" required placeholder="(99) 99999-9999" />
 
-				<!-- Seção de Serviços -->
-				<section>
-					<header class="major">
-						<h2>Nossos Serviços</h2>
-					</header>
-					<div class="row">
-						<div class="col-4 col-12-medium">
-							<section class="box">
-								<i class="icon solid featured fa-shower"></i>
-								<h3>Banho Completo</h3>
-								<ul class="alt">
-									<li>Hidratação</li>
-									<li>Secagem profissional</li>
-									<li>Perfumação</li>
-								</ul>
-							</section>
-						</div>
-						<div class="col-4 col-12-medium">
-							<section class="box">
-								<i class="icon solid featured fa-cut"></i>
-								<h3>Tosa</h3>
-								<ul class="alt">
-									<li>Tosa higiênica</li>
-									<li>Tosa na raça</li>
-									<li>Corte de unhas</li>
-								</ul>
-							</section>
-						</div>
-						<div class="col-4 col-12-medium">
-							<section class="box">
-								<i class="icon solid featured fa-stethoscope"></i>
-								<h3>Veterinário</h3>
-								<ul class="alt">
-									<li>Consultas</li>
-									<li>Vacinação</li>
-									<li>Exames</li>
-								</ul>
-							</section>
-						</div>
+								<label for="email">E-mail</label>
+								<input type="email" id="email" name="email" required />
+
+								<label for="pet">Nome do pet</label>
+								<input type="text" id="pet" name="pet" required />
+
+								<label for="raca">Raça do pet</label>
+								<input type="text" id="raca" name="raca" required />
+
+								<label for="servico">Serviço</label>
+								<select id="servico" name="servico" required>
+									<option value="">Selecione...</option>
+									<option value="banho">Banho</option>
+									<option value="tosa">Tosa</option>
+									<option value="consulta">Consulta Veterinária</option>
+									<option value="vacina">Vacinação</option>
+									<option value="vacina">Hospedagem e Creche (Daycare)</option>
+									<option value="vacina">Dog Walker</option>
+									<option value="vacina">Adestramento</option>
+								</select>
+
+								<label for="data">Data</label>
+								<input type="date" id="data" name="data" required />
+
+								<label for="hora">Horário</label>
+								<input type="time" id="hora" name="hora" required />
+
+								<label for="obs">Observações</label>
+								<textarea id="obs" name="obs" rows="4" placeholder="Ex: Pet agressivo, alergias, etc."></textarea>
+								<br>
+								<button type="submit">Agendar</button>
+							</form>
+						</center>
 					</div>
-					<footer>
-						<a href="servicos.html" class="button large">Ver Todos os Serviços</a>
-					</footer>
 				</section>
 			</div>
+			<br><br>
 		</section>
 
 		<!-- Footer -->
@@ -159,7 +98,8 @@
 							<header>
 								<h2>Sobre Nós</h2>
 							</header>
-							<p>O Pet Shop Feliz está há 10 anos cuidando do seu melhor amigo com carinho e profissionalismo.</p>
+							<p>O Pet Shop Feliz está há 10 anos cuidando do seu melhor amigo com carinho e
+								profissionalismo.</p>
 							<a href="sobre.html" class="button alt">Conheça nossa história</a>
 						</section>
 					</div>
@@ -189,7 +129,8 @@
 							<ul class="social">
 								<li><a class="icon brands fa-facebook-f" href="#"><span class="label">Facebook</span></a></li>
 								<li><a class="icon brands fa-instagram" href="#"><span class="label">Instagram</span></a></li>
-								<li><a class="icon brands fa-whatsapp" href="#"><span class="label">WhatsApp</span></a></li>
+								<li><a class="icon brands fa-whatsapp" href="#"><span class="label">WhatsApp</span></a>
+								</li>
 							</ul>
 							<a href="contato.html" class="button alt">Fale Conosco</a>
 						</section>
